@@ -84,18 +84,18 @@ footer {
   background-color: #333;
   opacity: 0.9;
   margin: 0 auto;
-  height: 100%;
+  padding-top: 2rem;
   }
 
 .full {
   padding-bottom: 3rem;
-  // padding-top: 1rem;
+  width: 70%;
+  margin: 0 auto;
   }
 
 .one-log {
-  width: 70%;
   height: 10vh;
-  margin: 1vh auto;
+  margin-bottom: 1vh;
   color: white;
   border: 3px solid #666333;
   
@@ -115,5 +115,10 @@ footer {
   color: white;
   text-decoration: none;
   border-radius: 20px;
+  }
+
+.pagnation {
+  width: 100%;
+  
   }
 // ---------------------------------------------------
