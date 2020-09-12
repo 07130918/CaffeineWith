@@ -4,8 +4,8 @@ class LogsController < ApplicationController
         
     end
     
-    def show
-        
+    def all
+        @logs = Log.all
     end
     
     def new
@@ -13,6 +13,10 @@ class LogsController < ApplicationController
     end
     
     def create
+        
+    end
+    
+    def show
         
     end
     
