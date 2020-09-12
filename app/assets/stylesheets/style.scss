@@ -16,9 +16,12 @@ footer {
   position: absolute;
   bottom: 0;
   width: 100%;
+  opacity: 0.9;
+  font-size: 1%;
+  
   p {
     color: white;
-    
+    padding-left: 10rem;
     a {
       text-decoration: none;
       color: white;
@@ -26,6 +29,7 @@ footer {
     }  
   }
 // ----------------------------------------------------------
+// logs/index.html.erb
 .main {
     display: flex;
     width: 100%;
@@ -63,8 +67,11 @@ footer {
     
 .explanation {
     text-align: center;
+    background-color: #333;
+    opacity: 0.9;
     
     p {
       color: white;
       }
 }
+// -------------------------------------------------------------------------
