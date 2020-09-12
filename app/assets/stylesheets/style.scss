@@ -78,3 +78,40 @@ footer {
       }
 }
 // -------------------------------------------------------------------------
+// logs/all.html.erb
+.setting {
+  width: 80%;
+  background-color: #333;
+  opacity: 0.9;
+  margin: 0 auto;
+  height: 100%;
+  }
+
+.full {
+  padding-bottom: 3rem;
+  }
+
+.one-log {
+  width: 70%;
+  height: 10vh;
+  margin: 1vh auto;
+  color: white;
+  border: 3px solid #666333;
+  
+   p {
+     text-decoration: none;
+     }
+  }
+  
+.destroy-btn {
+  text-align: right;
+  }
+  
+.one-destroy {
+  display: inline-block;
+  padding: 0.2rem;
+  background-color: #FF0000;
+  color: white;
+  text-decoration: none;
+  border-radius: 20px;
+  }

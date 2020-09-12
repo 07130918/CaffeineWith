@@ -11,6 +11,10 @@
 
   <body>
     <header>
+      <%= link_to "home", root_path %>
+      <div class="all-logs">
+        <%= link_to "Everyone's post", all_logs_path %>
+      </div>
     </header>
     
     <%= yield %>

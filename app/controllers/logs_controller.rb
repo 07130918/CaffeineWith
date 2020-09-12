@@ -1,11 +1,10 @@
 class LogsController < ApplicationController
     
     def index
-        
     end
     
     def all
-        @logs = Log.all
+        @logs = Log.all.limit(7)
     end
     
     def new
@@ -21,6 +20,7 @@ class LogsController < ApplicationController
     end
     
     def destroy
-        
+        log = Log.find(params[:id])
+        log.destroy
     end
 end
