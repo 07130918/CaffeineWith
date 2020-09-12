@@ -5,7 +5,7 @@ class LogsController < ApplicationController
     end
     
     def all
-        @logs = Log.order("created_at DESC").limit(10)
+        @logs = Log.all.limit(7)
     end
     
     def new
