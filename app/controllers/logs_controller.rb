@@ -1,7 +1,6 @@
 class LogsController < ApplicationController
     
     def index
-        
     end
     
     def all
@@ -21,6 +20,7 @@ class LogsController < ApplicationController
     end
     
     def destroy
-        
+        log = Log.find(params[:id])
+        log.destroy
     end
 end
