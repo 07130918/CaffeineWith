@@ -5,7 +5,7 @@ class LogsController < ApplicationController
     end
     
     def all
-        @logs = Log.all
+        @logs = Log.order("created_at DESC").limit(10)
     end
     
     def new
