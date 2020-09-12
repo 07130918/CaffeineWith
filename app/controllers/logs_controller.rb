@@ -4,7 +4,7 @@ class LogsController < ApplicationController
     end
     
     def all
-        @logs = Log.all.limit(7)
+        @logs = Log.page(params[:page]).per(7).order("created_at DESC")
     end
     
     def new
