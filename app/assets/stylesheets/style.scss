@@ -1,27 +1,51 @@
+// application.html.erb
 body {
   background-image: url(coffee-shop-393954_1920.jpg);
   background-size: cover;
+  max-height: 100vh;
   }
   
 header {
     background-color: black;
     height: 10vh;
-    opacity: 0.4;
+    opacity: 0.5;
 }
 
+footer {
+  background-color: black;
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  opacity: 0.9;
+  font-size: 1%;
+  
+  p {
+    color: white;
+    padding-left: 10rem;
+    a {
+      text-decoration: none;
+      color: white;
+      }
+    }  
+  }
+// ----------------------------------------------------------
+// logs/index.html.erb
 .main {
     display: flex;
     width: 100%;
-    height: 87vh;
+    height: 90vh;
 }
 
 .maincontent{
     width: 80%;
     margin: 0 auto;
-    display: flex;
-    align-items: center;
+    position: relative;
     }
 
+.wrapper {
+  position: absolute;
+  top: 35%;
+  }  
   
 .btn {
   text-align: center;
@@ -37,16 +61,20 @@ header {
   background-image: linear-gradient(45deg, #FFC107 0%, #ff8b5f 100%);
   box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.29);
   border-bottom: solid 3px #c58668;
+  
+    &:active {
+      border-bottom: solid 2px #fd9535;
+      box-shadow: 0 0 2px rgba(0, 0, 0, 0.30);
+      }
 }
     
 .explanation {
     text-align: center;
+    background-color: #333;
+    opacity: 0.9;
     
     p {
       color: white;
       }
 }
-
-footer {
-  height: 2vh;
-  }
+// -------------------------------------------------------------------------
