@@ -2,7 +2,7 @@
 body {
   background-image: url(coffee-shop-393954_1920.jpg);
   background-size: cover;
-  max-height: 100vh;
+  min-height: 100vh;
   }
   
 header {
@@ -84,17 +84,18 @@ footer {
   background-color: #333;
   opacity: 0.9;
   margin: 0 auto;
-  height: 100%;
+  padding-top: 2rem;
   }
 
 .full {
   padding-bottom: 3rem;
+  width: 70%;
+  margin: 0 auto;
   }
 
 .one-log {
-  width: 70%;
   height: 10vh;
-  margin: 1vh auto;
+  margin-bottom: 1vh;
   color: white;
   border: 3px solid #666333;
   
@@ -115,3 +116,9 @@ footer {
   text-decoration: none;
   border-radius: 20px;
   }
+
+.pagnation {
+  width: 100%;
+  
+  }
+// ---------------------------------------------------
