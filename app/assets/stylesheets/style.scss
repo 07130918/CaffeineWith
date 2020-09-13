@@ -108,10 +108,10 @@ footer {
 // logs/all.html.erb
 .setting {
   width: 80%;
+  height: 90vh;
   background-color: #333;
   opacity: 0.9;
   margin: 0 auto;
-  height: 90vh;
   padding-top: 2rem;
   padding-bottom: 3rem;
   }
@@ -151,7 +151,32 @@ footer {
   }
 // ---------------------------------------------------
 // logs/destroy&create html.erb
-.mini p {
+.bulletin {
+  width: 80%;
+  height: 10rem;
+  background-color: #333;
+  opacity: 0.9;
+  margin: 20% auto 0;
   display: flex;
   justify-content: center;
+  position: relative;
+  
   }
+  
+.mini {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  text-align: center;
+  transform: translate(-50%, -50%);
+  font-weight: bold;
+  
+  p {
+    color: white;
+    padding: 5% 0;
+    }
+  }
+  
+.minibtn {
+  text-decoration: none;
+  }  
