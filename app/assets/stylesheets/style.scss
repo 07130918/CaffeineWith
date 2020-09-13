@@ -106,6 +106,7 @@ footer {
 .starbucks{
   background-color: #00704a;
   color: #FFF;
+  font-weight: bold;
   }
   
 .doutor{
@@ -121,21 +122,29 @@ footer {
 .tullys{
   background-color: #000;
   color: #FFF;
+  font-weight: bold;
   }
   
 .excelsior{
-  // background-color: ;
-  // color: ;
+  background-color: #FFF;
+  color: #0080CC;
+  font-weight: bold;
+  
+    span {
+      color: 	#009B74;
+      }
   }
   
 .other{
-  // background-color: ;
-  // color: ;
+  background-color: #f4a460;
+  color: #FFF;
+  font-weight: bold;
   }
   
 .house{
-  // background-color: ;
-  // color: ;
+  background-color: #FFF;
+  color: #9acd32;
+  font-weight: bold;
   }
   
 // -------------------------------------------------------------------------
