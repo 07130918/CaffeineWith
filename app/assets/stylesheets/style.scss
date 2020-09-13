@@ -81,15 +81,28 @@ footer {
 .select {
   display: none;
   // jqueryを使う
+}
   
-  .eggs {
-    height: 90vh;
-    display: flex;
-    justify-content: space-between;
+.items {
+  height: 90vh;
+  padding-top: 5em;
     
+    .eggs {
+      // width: 33.33%;
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+      ul, li {
+        list-style: none;
+        }
     }
-  }
-  
+    
+    .item {
+      display: inline-block;  
+          
+      }
+}
+
   
 // -------------------------------------------------------------------------
 // logs/all.html.erb
