@@ -80,7 +80,16 @@ footer {
 
 .select {
   display: none;
+  // jqueryを使う
+  
+  .eggs {
+    height: 90vh;
+    display: flex;
+    justify-content: space-between;
+    
+    }
   }
+  
   
 // -------------------------------------------------------------------------
 // logs/all.html.erb
