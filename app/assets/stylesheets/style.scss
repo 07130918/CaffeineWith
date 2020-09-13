@@ -94,15 +94,49 @@ footer {
       justify-content: space-between;
       ul, li {
         list-style: none;
+        display: inline-block;
         }
     }
     
     .item {
       display: inline-block;  
-          
       }
 }
 
+.starbucks{
+  background-color: #00704a;
+  color: #FFF;
+  }
+  
+.doutor{
+  background-color: #FFF;
+  color: #000000;
+  font-weight: bold;
+  
+    span{
+      color: #ffc000;
+      }
+  }
+  
+.tullys{
+  background-color: #000;
+  color: #FFF;
+  }
+  
+.excelsior{
+  // background-color: ;
+  // color: ;
+  }
+  
+.other{
+  // background-color: ;
+  // color: ;
+  }
+  
+.house{
+  // background-color: ;
+  // color: ;
+  }
   
 // -------------------------------------------------------------------------
 // logs/all.html.erb
