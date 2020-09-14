@@ -1,0 +1,3 @@
+class Caffe < ApplicationRecord
+    
+end
