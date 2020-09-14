@@ -1,6 +1,7 @@
 class LogsController < ApplicationController
     
     def index
+        @caffe = Caffe.all
     end
     
     def all
