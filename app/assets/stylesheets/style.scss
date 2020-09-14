@@ -83,6 +83,7 @@ footer {
       
     .choose {
       margin-top: 5%;
+      margin-bottom: 7%;
       }
 }
 
@@ -92,21 +93,40 @@ footer {
 }
   
 .items {
-  // max-height: 90vh;
-    
+  
+  
     .eggs {
-      margin: 15% auto 0;
-      width: 70%;
+      margin: 5% 0;
       display: flex;
       justify-content: space-between;
     }
     
     .item {
       // display: inline-block;
+      background-color: white;
+      width: 30%;
+      height: 10rem;
       
       &:hover {
         cursor: default;
         }
+      
+      p {
+        text-align: center;
+        }
+        
+      .size {
+        display: flex;
+        
+        }  
+      
+      h3 {
+        text-align: center;
+        }  
+      
+      h2 {
+        
+        }  
       }
 }
 
@@ -120,6 +140,7 @@ footer {
   background-color: #FFF;
   color: #000000;
   font-weight: bold;
+  border: 2px solid #ffc000;
   
     span{
       color: #ffc000;
@@ -136,6 +157,7 @@ footer {
   background-color: #FFF;
   color: #0080CC;
   font-weight: bold;
+  border: 2px solid #0080cc;
   
     span {
       color: 	#009B74;
@@ -152,6 +174,7 @@ footer {
   background-color: #FFF;
   color: #9acd32;
   font-weight: bold;
+  border: 2px solid #9acd32;
   }
   
 // -------------------------------------------------------------------------
