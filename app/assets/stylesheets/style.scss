@@ -8,7 +8,7 @@ body {
 header {
     background-color: black;
     height: 10vh;
-    opacity: 0.5;
+    opacity: 0.6;
 }
 
 footer {
@@ -76,6 +76,11 @@ footer {
     p {
       color: white;
       }
+      
+    .choose {
+      margin-top: 5%;
+      // width: 後で店名とそろえる;
+      }
 }
 
 .select {
@@ -84,22 +89,24 @@ footer {
 }
   
 .items {
-  height: 90vh;
-  padding-top: 5em;
+  // max-height: 90vh;
     
     .eggs {
-      // width: 33.33%;
+      margin: 15% auto 0;
+      width: 70%;
       display: flex;
-      flex-wrap: wrap;
       justify-content: space-between;
-      ul, li {
+        li {
         list-style: none;
-        display: inline-block;
+        // width: 33.3%;
+        text-align: center;
+        // display: inline-block;
+        // margin: 0 auto;
         }
     }
     
     .item {
-      display: inline-block;  
+      // display: inline-block;  
       }
 }
 
