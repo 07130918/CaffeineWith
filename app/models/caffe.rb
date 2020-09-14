@@ -1,3 +1,3 @@
 class Caffe < ApplicationRecord
-    belongs_to :log
+    has_many :log
 end

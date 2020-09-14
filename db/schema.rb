@@ -13,7 +13,6 @@
 ActiveRecord::Schema.define(version: 2020_09_14_023331) do
 
   create_table "caffes", options: "ENGINE=InnoDB DEFAULT CHARSET=utf8", force: :cascade do |t|
-    t.integer "log_id"
     t.integer "caffeine"
     t.string "store"
     t.string "size"
