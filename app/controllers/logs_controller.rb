@@ -1,6 +1,7 @@
 class LogsController < ApplicationController
     
     def index
+        @caffe = Caffe.all
     end
     
     def all
@@ -8,7 +9,7 @@ class LogsController < ApplicationController
     end
     
     def new
-        
+        @log = Log.new
     end
     
     def create

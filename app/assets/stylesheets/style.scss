@@ -122,9 +122,6 @@ footer {
         text-align: center;
         }  
       
-      h2 {
-        
-        }  
       }
 }
 
@@ -180,8 +177,7 @@ footer {
 .setting {
   width: 80%;
   height: 90vh;
-  background-color: #333;
-  opacity: 0.9;
+  background-color: #F2F2F2;
   margin: 0 auto;
   padding-top: 2rem;
   padding-bottom: 3rem;
@@ -275,3 +271,7 @@ footer {
       }
 }
 // ------------------------------------------------
+// logs/new.html.erb
+.cover {
+  max-height: 89vh;
+  }
