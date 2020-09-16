@@ -122,7 +122,8 @@ footer {
         }  
       
       .size {
-        overflow: auto;
+        overflow-x: auto;
+        overflow-y: hidden;
         width: 80%;
         margin: 0 auto;
         
@@ -131,17 +132,50 @@ footer {
         // ↑各アイテムを均等に配置し各アイテムの両側に半分の大きさの間隔を置く
         
         .sbtn {
-          display: inline-block;
+          // display: inline-block;
           text-decoration: none;
-          color: black;
           font-weight: bold;
           font-size: 1.6rem;
           }
-        }
+          .sbtn {
+              background: #00704a;
+              color:#fff;
+              border: none;
+              position: relative;
+              cursor: pointer;
+              transition: 800ms ease all;
+              outline: none;
+            &:hover{
+              background: #fff;
+              color: #00704a;
+            }
+            &:before,&:after{
+              content:'';
+              position: absolute;
+              top: 0;
+              right:0;
+              height: 2px;
+              width: 0;
+              background: #00704a;
+              transition: 400ms ease all;
+            }
+            &:after{
+              right: inherit;
+              top: inherit;
+              left: 0;
+              bottom: 0;
+            }
+            &:hover:before,&:hover:after{
+              width: 100%;
+              transition: 800ms ease all;
+            }
+            }
+            
+      }
       .size.wid {
         width: 100%;
-        }  
-      }
+      }  
+    }
 }
 
 .starbucks {
@@ -265,6 +299,7 @@ footer {
   }
   
 // ボタンについて(destroy.html.erb)------------------------
+// サイズ選びのボタンlogs/index.html.erbにあるセレクタの値はsbtnに記載
 .minibtn {
   display: inline-block;
   position: relative;
@@ -294,3 +329,5 @@ footer {
 .cover {
   max-height: 89vh;
   }
+  
+  
