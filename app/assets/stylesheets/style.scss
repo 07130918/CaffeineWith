@@ -176,56 +176,56 @@ footer {
           
           .sbtn.doutor {
             &:hover {
-              background-color: #;
-              color: #;
+              background-color: #ffc000;
+              color: #FFF;
               }
             &:before,&:after {
-              background-color: #;
+              background-color: #ffc000;
               }   
           }
             
           .sbtn.tullys {
             &:hover{
-              background: #;
-              color: #;
+              background: #FFF;
+              color: #000;
             }
             &:before,&:after{
-              background: #;
+              background: #FFF;
             }
           }
             
           .sbtn.excelsior {
             &:hover{
-              background: #;
-              color: #;
+              background: #0080CC;
+              color: #FFF;
             }
             &:before,&:after{
-              background: #;
+              background: #0080CC;
             }
           }
             
           .sbtn.other {
             &:hover{
-              background: #;
-              color: #;
+              background: #FFF;
+              color: #f4a460;
             }
             &:before,&:after{
-              background: #;
+              background: #FFF;
             }
           }
             
           .sbtn.house {
             &:hover{
-              background: #;
-              color: #;
+              background: #9acd32;
+              color: #FFF;
             }
             &:before,&:after{
-              background: #;
+              background: #9acd32;
             }
           }
   // ------------------------------------------------------------------------------          
       }
-      .size.wid {
+      .size.wid {  //サイズ選択肢が4つある場合
         width: 100%;
       }  
     }
@@ -239,7 +239,7 @@ footer {
   
 .doutor {
   background-color: #FFF;
-  color: #000000;
+  color: #ffc000;
   font-weight: bold;
   border: 2px solid #ffc000;
   
