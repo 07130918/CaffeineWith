@@ -145,7 +145,7 @@ footer {
               content:'';
               position: absolute;
               top: 0;
-              right:0;
+              right: 0;
               height: 2px;
               width: 0;
               transition: 400ms ease all;
@@ -163,6 +163,7 @@ footer {
               transition: 800ms ease all;
             }
           }
+          
           .sbtn.starbucks {
             &:hover {
               background-color: #FFF;
@@ -171,16 +172,57 @@ footer {
             &:before,&:after {
               background-color: #FFF;
               }   
-            }
+          }
+          
           .sbtn.doutor {
+            &:hover {
+              background-color: #;
+              color: #;
+              }
+            &:before,&:after {
+              background-color: #;
+              }   
+          }
+            
+          .sbtn.tullys {
             &:hover{
-              background: #000000;
-              color: #FFF;
+              background: #;
+              color: #;
             }
             &:before,&:after{
-              background: #000000;
+              background: #;
             }
+          }
+            
+          .sbtn.excelsior {
+            &:hover{
+              background: #;
+              color: #;
             }
+            &:before,&:after{
+              background: #;
+            }
+          }
+            
+          .sbtn.other {
+            &:hover{
+              background: #;
+              color: #;
+            }
+            &:before,&:after{
+              background: #;
+            }
+          }
+            
+          .sbtn.house {
+            &:hover{
+              background: #;
+              color: #;
+            }
+            &:before,&:after{
+              background: #;
+            }
+          }
   // ------------------------------------------------------------------------------          
       }
       .size.wid {
