@@ -3,6 +3,7 @@
         <%= form_for(@log) do |f| %>
             <p><%#= caffe.store %>で<%#= caffe.size %>サイズのコーヒーを飲むことを記録します!</p>
             <%= f.text_area :text, placeholder: "コーヒーを飲んだ時の感想,思いついたことなど自由に書き込んでみましょう", class: "text-area" %>
+            <%= f.submit "記録する", class: "b" %>
         <% end %>
     </div>
 </div>

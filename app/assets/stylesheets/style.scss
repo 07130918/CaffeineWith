@@ -169,6 +169,7 @@ footer {
           
           .sbtn.starbucks {
             border: 2px solid #FFF;
+            
             &:hover {
               background-color: #FFF;
               color: #00704a;
@@ -179,10 +180,13 @@ footer {
           }
           
           .sbtn.doutor {
+            color:  #ffc000;
+            
             &:hover {
               background-color: #ffc000;
               color: #FFF;
               }
+              
             &:before,&:after {
               background-color: #ffc000;
               }   
@@ -190,20 +194,24 @@ footer {
             
           .sbtn.tullys {
             border: 2px solid #FFF;
+            
             &:hover{
               background: #FFF;
               color: #000;
             }
+            
             &:before,&:after{
               background: #FFF;
             }
           }
             
           .sbtn.excelsior {
+            
             &:hover{
               background: #0080CC;
               color: #FFF;
             }
+            
             &:before,&:after{
               background: #0080CC;
             }
@@ -211,20 +219,24 @@ footer {
             
           .sbtn.other {
             border: 2px solid #FFF;
+            
             &:hover{
               background: #FFF;
               color: #f4a460;
             }
+            
             &:before,&:after{
               background: #FFF;
             }
           }
             
           .sbtn.house {
+            
             &:hover{
               background: #9acd32;
               color: #FFF;
             }
+            
             &:before,&:after{
               background: #9acd32;
             }
