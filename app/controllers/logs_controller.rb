@@ -13,7 +13,7 @@ class LogsController < ApplicationController
     end
     
     def create
-        
+       @log = Log.create(create_params)
     end
     
     def show
@@ -21,7 +21,14 @@ class LogsController < ApplicationController
     end
     
     def destroy
-        log = Log.find(params[:id])
-        log.destroy
+        @log = Log.find(params[:id])
+        @log.destroy
     end
+    
+    private
+    
+    def create_params
+        params.require(:log).permit(:text).merge(caffe_id: params[:caffe_id]) 
+    end
+    
 end

@@ -110,19 +110,143 @@ footer {
         }
       
       p {
-        text-align: center;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        min-height: 30%;
+        font-size: 120%;
         }
         
-      .size {
-        display: flex;
-        
-        }  
-      
       h3 {
         text-align: center;
+        padding: 2% 0;
         }  
       
+      .size {
+        overflow-x: auto;
+        overflow-y: hidden;
+        width: 80%;
+        margin: 0 auto;
+        
+        display: flex;
+        justify-content: space-around;
+        text-align: center;
+        // ↑各アイテムを均等に配置し各アイテムの両側に半分の大きさの間隔を置く
+  // サイズ選びのボタンについて--------------------------------------      
+        .sbtn {
+          width: 33.3%;
+          text-decoration: none;
+          font-weight: bold;
+          font-size: 1.6rem;
+          border: none;
+          position: relative;
+          cursor: pointer;
+          transition: 800ms ease all;
+          outline: none;
+          
+            &:before,&:after{
+              content:'';
+              position: absolute;
+              top: 0;
+              right: 0;
+              height: 2px;
+              width: 0;
+              transition: 400ms ease all;
+            }
+            
+            &:after{
+              right: inherit;
+              top: inherit;
+              left: 0;
+              bottom: 0;
+            }
+          
+            &:hover:before,&:hover:after{
+              width: 100%;
+              transition: 800ms ease all;
+            }
+          }
+          
+          .sbtn.starbucks {
+            border: 2px solid #FFF;
+            
+            &:hover {
+              background-color: #FFF;
+              color: #00704a;
+              }
+            &:before,&:after {
+              background-color: #FFF;
+              }   
+          }
+          
+          .sbtn.doutor {
+            color:  #ffc000;
+            
+            &:hover {
+              background-color: #ffc000;
+              color: #FFF;
+              }
+              
+            &:before,&:after {
+              background-color: #ffc000;
+              }   
+          }
+            
+          .sbtn.tullys {
+            border: 2px solid #FFF;
+            
+            &:hover{
+              background: #FFF;
+              color: #000;
+            }
+            
+            &:before,&:after{
+              background: #FFF;
+            }
+          }
+            
+          .sbtn.excelsior {
+            
+            &:hover{
+              background: #0080CC;
+              color: #FFF;
+            }
+            
+            &:before,&:after{
+              background: #0080CC;
+            }
+          }
+            
+          .sbtn.other {
+            border: 2px solid #FFF;
+            
+            &:hover{
+              background: #FFF;
+              color: #f4a460;
+            }
+            
+            &:before,&:after{
+              background: #FFF;
+            }
+          }
+            
+          .sbtn.house {
+            
+            &:hover{
+              background: #9acd32;
+              color: #FFF;
+            }
+            
+            &:before,&:after{
+              background: #9acd32;
+            }
+          }
+  // ------------------------------------------------------------------------------          
       }
+      .size.wid {  //サイズ選択肢が4つある場合
+        width: 100%;
+      }  
+    }
 }
 
 .starbucks {
@@ -133,7 +257,7 @@ footer {
   
 .doutor {
   background-color: #FFF;
-  color: #000000;
+  color: #000;
   font-weight: bold;
   border: 2px solid #ffc000;
   
@@ -246,6 +370,7 @@ footer {
   }
   
 // ボタンについて(destroy.html.erb)------------------------
+// サイズ選びのボタンlogs/index.html.erbにあるセレクタの値はsbtnに記載
 .minibtn {
   display: inline-block;
   position: relative;
@@ -273,5 +398,21 @@ footer {
 // ------------------------------------------------
 // logs/new.html.erb
 .cover {
-  max-height: 89vh;
+  max-height: 80vh;
+  margin: 20vh auto;
+  }
+
+.sheet {
+  width: 80%;
+  margin: 0 auto;
+  background-color: #F2F2F2;
+  border-radius: 2%;
+  }  
+  
+.text-area {
+  display: block;
+  margin: 2vh auto;
+  width: 80%; 
+  height: 30vh;
+  border: 2px solid #666333;
   }
