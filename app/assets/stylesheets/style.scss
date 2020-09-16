@@ -115,6 +115,14 @@ footer {
         
       .size {
         display: flex;
+        width: 80%;
+        margin: 0 auto;
+        justify-content: space-around;
+        ↑各アイテムを均等に配置し各アイテムの両側に半分の大きさの間隔を置く
+        
+        .sbtn {
+          display: inline-block;
+          }
         
         }  
       
