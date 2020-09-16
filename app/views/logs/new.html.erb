@@ -1,7 +1,8 @@
 <div class="cover">
-    <div class="setting">
+    <div class="sheet">
         <%= form_for(@log) do |f| %>
-            <%= f.text_field :text, placeholder: "test" %>
+            <p><%#= caffe.store %>で<%#= caffe.size %>サイズのコーヒーを飲むことを記録します!</p>
+            <%= f.text_area :text, placeholder: "コーヒーを飲んだ時の感想,思いついたことなど自由に書き込んでみましょう", class: "text-area" %>
         <% end %>
     </div>
 </div>
