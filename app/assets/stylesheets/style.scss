@@ -130,25 +130,17 @@ footer {
         display: flex;
         justify-content: space-around;
         // ↑各アイテムを均等に配置し各アイテムの両側に半分の大きさの間隔を置く
-        
+  // サイズ選びのボタンについて--------------------------------------      
         .sbtn {
-          // display: inline-block;
           text-decoration: none;
           font-weight: bold;
           font-size: 1.6rem;
-          }
-          .sbtn {
-              background: #00704a;
-              color:#fff;
-              border: none;
-              position: relative;
-              cursor: pointer;
-              transition: 800ms ease all;
-              outline: none;
-            &:hover{
-              background: #fff;
-              color: #00704a;
-            }
+          border: none;
+          position: relative;
+          cursor: pointer;
+          transition: 800ms ease all;
+          outline: none;
+          
             &:before,&:after{
               content:'';
               position: absolute;
@@ -156,21 +148,33 @@ footer {
               right:0;
               height: 2px;
               width: 0;
-              background: #00704a;
               transition: 400ms ease all;
             }
+            
             &:after{
               right: inherit;
               top: inherit;
               left: 0;
               bottom: 0;
             }
+          
             &:hover:before,&:hover:after{
               width: 100%;
               transition: 800ms ease all;
             }
+          }
+          .sbtn {
+              background: #00704a;
+              color:#fff;
+            &:hover{
+              background: #fff;
+              color: #00704a;
             }
-            
+            &:before,&:after{
+              background: #00704a;
+            }
+            }
+  // ------------------------------------------------------------------------------          
       }
       .size.wid {
         width: 100%;
