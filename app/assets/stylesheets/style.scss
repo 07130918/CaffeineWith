@@ -129,9 +129,11 @@ footer {
         
         display: flex;
         justify-content: space-around;
+        text-align: center;
         // ↑各アイテムを均等に配置し各アイテムの両側に半分の大きさの間隔を置く
   // サイズ選びのボタンについて--------------------------------------      
         .sbtn {
+          width: 33.3%;
           text-decoration: none;
           font-weight: bold;
           font-size: 1.6rem;
@@ -165,6 +167,7 @@ footer {
           }
           
           .sbtn.starbucks {
+            border: 2px solid #FFF;
             &:hover {
               background-color: #FFF;
               color: #00704a;
@@ -185,6 +188,7 @@ footer {
           }
             
           .sbtn.tullys {
+            border: 2px solid #FFF;
             &:hover{
               background: #FFF;
               color: #000;
@@ -205,6 +209,7 @@ footer {
           }
             
           .sbtn.other {
+            border: 2px solid #FFF;
             &:hover{
               background: #FFF;
               color: #f4a460;
