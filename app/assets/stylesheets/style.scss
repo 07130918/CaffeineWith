@@ -163,15 +163,22 @@ footer {
               transition: 800ms ease all;
             }
           }
-          .sbtn {
-              background: #00704a;
-              color:#fff;
-            &:hover{
-              background: #fff;
+          .sbtn.starbucks {
+            &:hover {
+              background-color: #FFF;
               color: #00704a;
+              }
+            &:before,&:after {
+              background-color: #FFF;
+              }   
+            }
+          .sbtn.doutor {
+            &:hover{
+              background: #000000;
+              color: #FFF;
             }
             &:before,&:after{
-              background: #00704a;
+              background: #000000;
             }
             }
   // ------------------------------------------------------------------------------          
