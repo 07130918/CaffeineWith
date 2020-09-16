@@ -122,8 +122,9 @@ footer {
         }  
       
       .size {
+        overflow: auto;
         width: 80%;
-        margin: auto auto;
+        margin: 0 auto;
         
         display: flex;
         justify-content: space-around;
@@ -131,7 +132,14 @@ footer {
         
         .sbtn {
           display: inline-block;
+          text-decoration: none;
+          color: black;
+          font-weight: bold;
+          font-size: 1.6rem;
           }
+        }
+      .size.wid {
+        width: 100%;
         }  
       }
 }
