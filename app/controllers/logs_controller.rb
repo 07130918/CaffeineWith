@@ -16,10 +16,6 @@ class LogsController < ApplicationController
        @log = Log.create(create_params)
     end
     
-    def show
-        
-    end
-    
     def destroy
         @log = Log.find(params[:id])
         @log.destroy
