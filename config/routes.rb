@@ -4,7 +4,7 @@ Rails.application.routes.draw do
   resources :caffes, only: [:index] do
     resources :logs, only: [:show, :new, :create, :destroy] 
       collection do
-        get :all
+      get 'all' => 'logs#all'
       end
-  end  
+    end  
 end

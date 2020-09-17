@@ -28,7 +28,7 @@ class LogsController < ApplicationController
     private
     
     def create_params
-        params.require(:log).permit(:text).merge(caffe_id: params[:caffe_id]) 
+        # params.require(:log).permit(:text).merge(caffe_id: params[:caffe_id]) 
     end
     
 end
