@@ -76,6 +76,7 @@ footer {
     text-align: center;
     background-color: #333;
     opacity: 0.9;
+    margin-top: 3vh;
     
     p {
       color: white;
@@ -315,8 +316,8 @@ footer {
 .one-log {
   height: 10vh;
   margin-bottom: 1vh;
-  color: white;
-  border: 3px solid #666333;
+  color: #000;
+  border: 3px solid #7b5544;
   
    p {
      text-decoration: none;
@@ -370,7 +371,6 @@ footer {
   }
   
 // ボタンについて(destroy.html.erb)------------------------
-// サイズ選びのボタンlogs/index.html.erbにあるセレクタの値はsbtnに記載
 .minibtn {
   display: inline-block;
   position: relative;
@@ -405,8 +405,15 @@ footer {
 .sheet {
   width: 80%;
   margin: 0 auto;
+  padding: 2vh 0;
   background-color: #F2F2F2;
   border-radius: 2%;
+  
+    p {
+      width: 80%;
+      margin: 0 auto;
+      // ↑text-areaと左の位置を揃えるレイアウトにするため
+      }
   }  
   
 .text-area {
@@ -414,5 +421,28 @@ footer {
   margin: 2vh auto;
   width: 80%; 
   height: 30vh;
-  border: 2px solid #666333;
+  border: 2px solid #7b5544;
   }
+  
+// ボタンについて(logs/new.html.erb)----------------------------------  
+.newbtn{
+  margin-left: 10%;
+  color: #FFF;
+  background-color: #7b5544;
+  font-weight: 500;
+  
+	text-align: center;
+	border-top: 2px solid rgba(255,255,255,0.2);
+	border-bottom: 2px solid rgba(0,0,0,0.2);
+	border-radius: 2%;
+  
+  &:hover {
+    opacity: 0.8;
+    }
+  
+  &:active {
+  transform: translate(0,2px);
+	border-bottom: none;
+    }  
+  }
+  // ----------------------------------------------------------

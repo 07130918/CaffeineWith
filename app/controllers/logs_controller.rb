@@ -9,11 +9,14 @@ class LogsController < ApplicationController
     end
     
     def new
+        @caffe = Caffe.find(params[:caffe_id])
         @log = Log.new
+        @suji = @caffe.id.to_i
     end
     
     def create
-       @log = Log.create(create_params)
+       Log.create(create_params)
+       redirect_to :root and return
     end
     
     def destroy
@@ -25,7 +28,7 @@ class LogsController < ApplicationController
     private
     
     def create_params
-        # params.require(:log).permit(:text).merge(caffe_id: params[:caffe_id]) 
+        params.require(:log).permit(:text).merge(caffe_id: params[:caffe_id]) 
     end
     
 end
