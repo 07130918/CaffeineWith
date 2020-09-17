@@ -1,7 +1,26 @@
 <div class="cover">
     <div class="sheet">
         <%= form_for [@caffe, @log] do |f| %>
-            <p><%= @caffe.store %>で<%= @caffe.size %>サイズのコーヒーを飲むことを記録します!</p>
+        
+            <% if @caffe.id <= 4  %>
+                <p><span class="starbucks"><%= @caffe.store %></span>で<span class="starbucks"><%= @caffe.size %></span>サイズのコーヒーを飲むことを記録します!</p>
+                
+            <% elsif @caffe.id == 5 || 6 || 7  %>
+                <p><span><%= @caffe.store %></span>で<span><%= @caffe.size %></span>サイズのコーヒーを飲むことを記録します!</p>
+                
+            <% elsif @caffe.id == 8 || 9 || 10 || 11 %>
+                <p><span><%= @caffe.store %></span>で<span><%= @caffe.size %></span>サイズのコーヒーを飲むことを記録します!</p>
+                
+            <% elsif @caffe.id == 12|| 13 || 14 %>
+                <p><span><%= @caffe.store %></span>で<span><%= @caffe.size %></span>サイズのコーヒーを飲むことを記録します!</p>
+                
+            <% elsif @caffe.id == 15 || 16 ||17 %>
+                <p><span><%= @caffe.store %></span>で<span><%= @caffe.size %></span>サイズのコーヒーを飲むことを記録します!</p>
+                
+            <% else %>
+                <p><span><%= @caffe.store %></span>で<span><%= @caffe.size %></span>サイズのコーヒーを飲むことを記録します!</p>
+            <% end %>
+            
             <%= f.text_area :text, placeholder: "コーヒーを飲んだ時の感想,思いついたことなど自由に書き込んでみましょう!", class: "text-area" %>
             <div class="newbtnwrapp">
                 <%= f.submit "記録する", class: "newbtn" %>
