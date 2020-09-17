@@ -17,7 +17,8 @@ class LogsController < ApplicationController
     end
     
     def destroy
-        @log = Log.find(params[:id])
+        @caffe = Caffe.find(params[:caffe_id])
+        @log = @caffe.log.find(params[:id])
         @log.destroy
     end
     
