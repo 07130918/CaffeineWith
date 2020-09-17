@@ -15,6 +15,7 @@ class LogsController < ApplicationController
     
     def create
        Log.create(create_params)
+       redirect_to :root and return
     end
     
     def destroy
