@@ -11,6 +11,7 @@ class LogsController < ApplicationController
     def new
         @caffe = Caffe.find(params[:caffe_id])
         @log = Log.new
+        @suji = @caffe.id.to_i
     end
     
     def create

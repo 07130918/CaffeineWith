@@ -2,19 +2,19 @@
     <div class="sheet">
         <%= form_for [@caffe, @log] do |f| %>
             <!--選んだ店により文字色と背景を変える-->
-            <% if @caffe.id <= 4  %>
+            <% if @suji <= 4  %>
                 <p><span class="starbucks"><%= @caffe.store %></span>で<span class="starbucks"><%= @caffe.size %></span>サイズのコーヒーを飲むことを記録します!</p>
                 
-            <% elsif @caffe.id == 5 || 6 || 7  %>
+            <% elsif @suji >= 5 && @suji <= 7  %>
                 <p><span class="doutor"><%= @caffe.store %></span>で<span class="doutor"><%= @caffe.size %></span>サイズのコーヒーを飲むことを記録します!</p>
                 
-            <% elsif @caffe.id == 8 || 9 || 10 || 11 %>
+            <% elsif @suji >= 8 && @suji <= 11  %>
                 <p><span class="tullys"><%= @caffe.store %></span>で<span class="tullys"><%= @caffe.size %></span>サイズのコーヒーを飲むことを記録します!</p>
                 
-            <% elsif @caffe.id == 12|| 13 || 14 %>
+            <% elsif @suji >= 12 && @suji <= 14 %>
                 <p><span class="excelsior"><%= @caffe.store %></span>で<span class="excelsior"><%= @caffe.size %></span>サイズのコーヒーを飲むことを記録します!</p>
                 
-            <% elsif @caffe.id == 15 || 16 ||17 %>
+            <% elsif @suji >= 15 && @suji <= 17 %>
                 <p><span class="other"><%= @caffe.store %></span>で<span class="other"><%= @caffe.size %></span>サイズのコーヒーを飲むことを記録します!</p>
                 
             <% else %>
