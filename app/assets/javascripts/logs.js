@@ -4,5 +4,6 @@ $(document).on('turbolinks:load', function() {
         $('.wrapper').fadeOut()
         $('.select').fadeIn()
     });
-    
+    // -------------------------------------------
+//  ------------------   
 });
