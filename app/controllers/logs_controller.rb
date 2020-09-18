@@ -17,7 +17,7 @@ class LogsController < ApplicationController
        Log.create(create_params)
        redirect_to :root and return
     end
-    
+    # --------------------------------------
     def destroy
         @caffe = Caffe.find(params[:caffe_id])
         @log = @caffe.logs.find(params[:id])

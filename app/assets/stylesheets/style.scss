@@ -413,6 +413,11 @@ footer {
       width: 80%;
       margin: 0 auto;
       // ↑text-areaと左の位置を揃えるレイアウトにするため
+        
+        span {
+          padding: 0 1rem;
+          text-align: center; 
+          }
       }
   }  
   
