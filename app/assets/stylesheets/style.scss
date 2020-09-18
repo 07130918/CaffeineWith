@@ -87,6 +87,10 @@ footer {
       color: white;
       }
       
+   .emergency {
+      color: red;
+     }
+      
     .choose {
       margin-top: 5%;
       margin-bottom: 7%;
@@ -332,6 +336,7 @@ footer {
      max-width: 75%;
      table-layout: fixed;
      word-wrap: break-word;
+     max-height: 10vh;
      }
   }
   
