@@ -305,7 +305,6 @@ footer {
   background-color: #F2F2F2;
   margin: 0 auto;
   padding-top: 2rem;
-  padding-bottom: 3rem;
   }
 
 .full {
@@ -316,19 +315,26 @@ footer {
 .one-log {
   height: 10vh;
   margin-bottom: 1vh;
-  color: #000;
   border: 3px solid #7b5544;
+  position: relative;
   
    p {
      text-decoration: none;
+     color: #000;
+     position: absolute;
+     top: 10%;
+     left: 2%;
+     max-width: 75%;
+     table-layout: fixed;
+     word-wrap: break-word;
      }
   }
   
-.destroy-btn {
-  text-align: right;
-  }
-  
 .one-destroy {
+  position: absolute;
+  top: 50%;
+  right: 0;
+  transform: translateY(-50%);
   display: inline-block;
   padding: 0.2rem;
   background-color: #FF0000;
@@ -338,8 +344,8 @@ footer {
   }
 
 .pagnation {
-  width: 100%;
-  text-decoration: none;
+  // width: 100%;
+  // text-decoration: none;
   color: white;
   }
 // ---------------------------------------------------
