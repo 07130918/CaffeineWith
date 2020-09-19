@@ -16,9 +16,11 @@
       <div class="all-logs">
         <%= link_to "Everyone's log", all_caffes_path %>
       </div>
+      <% if user_signed_in? %>
+        <%= link_to "サインアウト", destroy_user_session_path, method: :delete %>
+      <% end %>
     </header>
     
-    <%= render 'layouts/notifications' %>
     <%= yield %>
     
     <footer>
