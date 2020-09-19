@@ -17,6 +17,15 @@
     border: 2px solid #000;
     }    
 // --------------------------------------------------------
+.logsign {
+    color: #FFF;
+    background-color: #00b900;
+    
+    &:hover {
+        color: #00b900;
+        background-color: #FFF;
+        }
+    }
 
 // -------------------------------------------
 .deviselinks {
