@@ -5,7 +5,7 @@ $(document).on('turbolinks:load', function() {
     });
     
     $("openSidebarMenusidebarMenu").click(function(){
-        $(this).toggleClass("badboy");
+        $(this).removeClass("header");
     });
     // $(".openSidebarMenu").click(function(){
         // $('#sidebarMenu').css('transform', 'translateX(0)');
