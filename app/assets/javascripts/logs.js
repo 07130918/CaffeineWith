@@ -5,10 +5,15 @@ $(document).on('turbolinks:load', function() {
     });
     
     $('input[name="check"]').change(function(){
-        $("#sidebarMenu").css("transform","translateX(0)");
+       
+        var menu = $('#openSidebarMenu').prop('checked');
+       
+        if (menu) {
+            $("#sidebarMenu").css("transform","translateX(0)");
+        } else {
+            $("#sidebarMenu").css("transform","translateX(100%)");
+            $("#sidebarMenu").css("transition","transform 250ms ease-in-out");
+        }
     });
-    // $(".openSidebarMenu").click(function(){
-        // $('#sidebarMenu').css('transform', 'translateX(0)');
-        // });
 
 });

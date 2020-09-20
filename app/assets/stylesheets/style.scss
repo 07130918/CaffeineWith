@@ -462,7 +462,6 @@ footer {
     }  
   }
   // ----------------------------------------------------------
-
 #sidebarMenu {
     height: 90vh;
     position: fixed;
@@ -482,13 +481,8 @@ footer {
       // 全ての小文字を大文字に(.innerlink)
       }
 }
-// input[type="checkbox"]:checked ~ #sidebarMenu {
-    // transform: translateX(0);
-// }
 
 .sidebarMenuInner{
-    // margin:0;
-    // margin-top: 10%;
     border-top: 1px solid rgba(255, 255, 255, 0.10);
   
   .innerlink{
@@ -508,6 +502,7 @@ input[type=checkbox] {
     box-sizing: border-box;
     display: none;
 }
+
 .sidebarIconToggle {
     transition: all 0.3s;
     cursor: pointer;
@@ -527,17 +522,20 @@ input[type=checkbox] {
     width: 100%;
     background-color: #fff;
 }
+
 .horizontal {
     transition: all 0.3s;
     position: relative;
     float: left;
     margin-top: 3px;
 }
+
 .diagonal.part-1 {
     position: relative;
     transition: all 0.3s;
     float: left;
 }
+
 .diagonal.part-2 {
     transition: all 0.3s;
     position: relative;
@@ -545,20 +543,20 @@ input[type=checkbox] {
     margin-top: 3px;
 }
 // -------------------------------------------------------
-input[type=checkbox]:checked ~ .sidebarIconToggle > .horizontal {
+input[type=checkbox]:checked ~ .sidebarIconToggle {
     transition: all 0.3s;
-    box-sizing: border-box;
+  
+  .horizontal {
     opacity: 0;
-}
-input[type=checkbox]:checked ~ .sidebarIconToggle > .diagonal.part-1 {
-    transition: all 0.3s;
-    box-sizing: border-box;
+  }
+  
+  .diagonal.part-1 {
     transform: rotate(-135deg);
     margin-top: 8px;
-}
-input[type=checkbox]:checked ~ .sidebarIconToggle > .diagonal.part-2 {
-    transition: all 0.3s;
-    box-sizing: border-box;
+  }
+  
+  .diagonal.part-2 {
     transform: rotate(135deg);
     margin-top: -9px;
+  }
 }
