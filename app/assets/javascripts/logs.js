@@ -3,7 +3,12 @@ $(document).on('turbolinks:load', function() {
         $('.wrapper').fadeOut()
         $('.select').fadeIn()
     });
-    // -------------------------------------------
+    
+    $("openSidebarMenusidebarMenu").click(function(){
+        $(this).toggleClass("badboy");
+    });
+    // $(".openSidebarMenu").click(function(){
+        // $('#sidebarMenu').css('transform', 'translateX(0)');
+        // });
 
-//  ------------------   
 });

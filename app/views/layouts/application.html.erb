@@ -14,21 +14,29 @@
   <body>
     <header>
     
-      <%= link_to "Home", root_path %>
-      
-      
-      <div class="all-logs">
-        <%= link_to "Everyone's log", all_caffes_path %>
-      </div>
-      
+<!---------------------------------------------------------    -->
+  <input type="checkbox" class="openSidebarMenu" id="openSidebarMenu">
+  <label for="openSidebarMenu" class="sidebarIconToggle">
+    <div class="spinner diagonal part-1"></div>
+    <div class="spinner horizontal"></div>
+    <div class="spinner diagonal part-2"></div>
+  </label>
+  
+  <div id="sidebarMenu">
+    <ul class="sidebarMenuInner">
+      <li><%= link_to "Home", root_path %></li>
+      <li><%= link_to "Everyone's log", all_caffes_path %></li>
       <% if user_signed_in? %>
-        <%= link_to "ログアウト", destroy_user_session_path, method: :delete %>
-        <%= link_to "My page", user_path(current_user) %>
-        <%= link_to "プロフィール編集", edit_user_path(current_user) %>
+        <li><%= link_to "ログアウト", destroy_user_session_path, method: :delete %></li>
+        <li><%= link_to "My page", user_path(current_user) %></li>
+        <li><%= link_to "プロフィール編集", edit_user_path(current_user) %></li>
       <% else %>
-        <%= link_to "ログイン", new_user_session_path %>
-        <%= link_to "新規登録", new_user_registration_path %>
+        <li><%= link_to "ログイン", new_user_session_path %></li>
+        <li><%= link_to "新規登録", new_user_registration_path %></li>
       <% end %>
+    </ul>
+  </div>
+<!------------------------------------------------------------->
     </header>
     
     <%= yield %>
