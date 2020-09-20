@@ -15,7 +15,7 @@
     <header class="header">
     
 <!---------------------------------------------------------    -->
-  <input type="checkbox" class="openSidebarMenu" id="openSidebarMenu">
+  <input type="checkbox" class="openSidebarMenu" name="check" id="openSidebarMenu">
   <label for="openSidebarMenu" class="sidebarIconToggle">
     <div class="spinner diagonal part-1"></div>
     <div class="spinner horizontal"></div>
@@ -24,18 +24,19 @@
   
   <div id="sidebarMenu">
   <p>Menu</p>
-    <ul class="sidebarMenuInner">
-      <li><%= link_to "Home", root_path %></li>
-      <li><%= link_to "Everyone's log", all_caffes_path %></li>
+  
+    <div class="sidebarMenuInner">
+      <%= link_to "Home", root_path, class: "innerlink" %>
+      <%= link_to "Everyone's log", all_caffes_path, class: "innerlink" %>
       <% if user_signed_in? %>
-        <li><%= link_to "ログアウト", destroy_user_session_path, method: :delete %></li>
-        <li><%= link_to "My page", user_path(current_user) %></li>
-        <li><%= link_to "プロフィール編集", edit_user_path(current_user) %></li>
+        <%= link_to "ログアウト", destroy_user_session_path, method: :delete, class: "innerlink" %>
+        <%= link_to "My page", user_path(current_user), class: "innerlink" %>
+        <%= link_to "プロフィール編集", edit_user_path(current_user), class: "innerlink" %>
       <% else %>
-        <li><%= link_to "ログイン", new_user_session_path %></li>
-        <li><%= link_to "新規登録", new_user_registration_path %></li>
+        <%= link_to "ログイン", new_user_session_path, class: "innerlink" %>
+        <%= link_to "新規登録", new_user_registration_path, class: "innerlink" %>
       <% end %>
-    </ul>
+    </div>
   </div>
 <!------------------------------------------------------------->
     </header>

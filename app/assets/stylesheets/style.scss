@@ -473,37 +473,35 @@ footer {
     transition: transform 250ms ease-in-out;
     background-color: #000;  
     
+    
     p {
       color: #FFF;
       font-weight: bold;
+      height: 5vh;
+       text-transform: uppercase;
+      // 全ての小文字を大文字に(.innerlink)
       }
 }
-input[type="checkbox"]:checked ~ #sidebarMenu {
-    transform: translateX(0);
-}
+// input[type="checkbox"]:checked ~ #sidebarMenu {
+    // transform: translateX(0);
+// }
 
 .sidebarMenuInner{
     // margin:0;
-    // padding:0;
+    // margin-top: 10%;
     border-top: 1px solid rgba(255, 255, 255, 0.10);
+  
+  .innerlink{
+      display: flex;
+      flex-direction: column;
+      color: #fff;
+      text-transform: uppercase;
+      font-weight: bold;
+      padding: 20px;
+      cursor: pointer;
+      border-bottom: 1px solid rgba(255, 255, 255, 0.10);
+  }
 }
-.sidebarMenuInner li{
-    list-style: none;
-    color: #fff;
-    text-transform: uppercase;
-    font-weight: bold;
-    padding: 20px;
-    cursor: pointer;
-    border-bottom: 1px solid rgba(255, 255, 255, 0.10);
-}
-.sidebarMenuInner li a{
-    color: #fff;
-    text-transform: uppercase;
-    font-weight: bold;
-    cursor: pointer;
-    text-decoration: none;
-}
-
 
 input[type=checkbox] {
     transition: all 0.3s;

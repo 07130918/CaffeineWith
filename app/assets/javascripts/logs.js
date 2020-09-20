@@ -4,8 +4,8 @@ $(document).on('turbolinks:load', function() {
         $('.select').fadeIn()
     });
     
-    $("openSidebarMenusidebarMenu").click(function(){
-        $(this).removeClass("header");
+    $('input[name="check"]').change(function(){
+        $("#sidebarMenu").css("transform","translateX(0)");
     });
     // $(".openSidebarMenu").click(function(){
         // $('#sidebarMenu').css('transform', 'translateX(0)');
