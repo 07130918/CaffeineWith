@@ -8,4 +8,5 @@ Rails.application.routes.draw do
       get 'all' => 'logs#all'
       end
     end  
+  resources :user, only: [:show, :edit, :update]  
 end
