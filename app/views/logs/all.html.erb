@@ -3,7 +3,7 @@
   <% @logs.each do |one| %>
    <div class="one-log">
       <p><%= one.text %></p>
-      <% if one.user_id == current_user.id %>
+      <% if user_signed_in? && one.user_id == current_user.id %>
       <%= link_to "destroy this log", caffe_log_path(one.caffe_id, one), method: :delete, class: "one-destroy" %>
                                        <!--"/caffes/#{one.caffe_id}/logs/#{one.id}"と同義-->
       <% end %>                                  
