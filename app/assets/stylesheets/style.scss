@@ -15,8 +15,11 @@ body {
       color: #FFF;
       }
 }
-// --------------------------------------------
-//--------------------------------------------
+
+.slide {
+  
+  }
+
 footer {
   background-color: black;
   position: absolute;
@@ -576,10 +579,15 @@ input[type=checkbox]:checked ~ .sidebarIconToggle {
   
   }
   
+.cardinner {
+  } 
+  
 .top-image {
+  align-items: center;
   height: 8rem;
   border-radius: 50%;
   border: 2px solid green;
+  background-color: #FFF;
   }
   
   

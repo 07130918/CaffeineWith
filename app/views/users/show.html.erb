@@ -3,9 +3,9 @@
         <div class="cardinner" >
          <% if current_user.image.attached? %>
          <!--image画像を設定しているか否かで分岐、していない際はこちらから指定-->
-            <%= image_tag (current_user.image), class: "top-image change-border01__inner" %>
+            <%= image_tag (current_user.image), class: "top-image" %>
          <% else %>
-            <%= image_tag '/assets/Sherlock-Holmes.png', class: "top-image change-border01__inner" %>
+            <%= image_tag '/assets/Sherlock-Holmes.png', class: "top-image" %>
          <% end %>
          
         </div>
