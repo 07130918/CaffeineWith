@@ -386,7 +386,7 @@ footer {
     }
   }
   
-// ボタンについて(destroy.html.erb)------------------------
+// ボタンについて(create&destroy.html.erb)------------------------
 .minibtn {
   display: inline-block;
   position: relative;
@@ -547,7 +547,7 @@ input[type=checkbox] {
     float: left;
     margin-top: 3px;
 }
-// -------------------------------------------------------
+
 input[type=checkbox]:checked ~ .sidebarIconToggle {
     transition: all 0.3s;
   
@@ -565,3 +565,5 @@ input[type=checkbox]:checked ~ .sidebarIconToggle {
     margin-top: -9px;
   }
 }
+//  views/users --------------------------------------------------------------------
+// users/show.html.erb---------------------------------------------
