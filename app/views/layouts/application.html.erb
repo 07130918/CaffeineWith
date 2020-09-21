@@ -13,7 +13,17 @@
 
   <body>
     <header class="header">
+    <!------------------------------------------------------------------------->
     <%= link_to "HOME", root_path, class: "provisional" %>
+     <%= link_to "Everyone's log", all_caffes_path, class: "provisional" %>
+      <% if user_signed_in? %>
+        <%= link_to "ログアウト", destroy_user_session_path, method: :delete, class: "provisional" %>
+        <%= link_to "My page", user_path(current_user), class: "innerlink" %>
+        <%= link_to "プロフィール編集", edit_user_path(current_user), class: "provisional" %>
+      <% else %>
+        <%= link_to "ログイン", new_user_session_path, class: "provisional" %>
+        <%= link_to "新規登録", new_user_registration_path, class: "provisional" %>
+      <% end %>
 <!---------------------------------------------------------    -->
   <input type="checkbox" class="openSidebarMenu" name="check" id="openSidebarMenu">
   <label for="openSidebarMenu" class="sidebarIconToggle">
