@@ -567,3 +567,19 @@ input[type=checkbox]:checked ~ .sidebarIconToggle {
 }
 //  views/users --------------------------------------------------------------------
 // users/show.html.erb---------------------------------------------
+.card {
+  text-align: center;
+  box-shadow: 0 0 1rem 1rem rgba(0,0,0,0.2);
+  width: 40%;
+  margin: 0 auto 2rem;
+  padding: 1rem 0;
+  
+  }
+  
+.top-image {
+  height: 8rem;
+  border-radius: 50%;
+  border: 2px solid green;
+  }
+  
+  
