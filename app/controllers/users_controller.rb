@@ -1,7 +1,7 @@
 class UsersController < ApplicationController
     
     def show
-        @logs = Log.where(user_id == current_user.id).page(params[:page]).per(7).order("created_at DESC")
+        @logs = Log.where(user_id: current_user.id).page(params[:page]).per(7).order("created_at DESC")
     end
     
     def edit
@@ -9,4 +9,5 @@ class UsersController < ApplicationController
     
     def update
     end
+    
 end
