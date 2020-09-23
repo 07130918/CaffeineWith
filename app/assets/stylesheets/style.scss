@@ -3,6 +3,7 @@ body {
   background-image: url('coffee-shop-393954_1920.jpg');
   background-size: cover;
   max-height: 100vh;
+  overflow-y: hidden;
   }
   
 .header {
@@ -424,7 +425,7 @@ footer {
   }
   
 // -------------------------------------------------------------------------
-// logs/all.html.erb
+// logs/all.html.erb(users/show.html.erb)
 .setting {
   width: 80%;
   height: 90vh;
@@ -432,8 +433,8 @@ footer {
   margin: 0 auto;
   padding-top: 2rem;
   }
-
-.full {
+  
+.full {   // ←.fullもusers/show.html.erbで再利用
   width: 70%;
   margin: 0 auto;
   }
@@ -609,7 +610,7 @@ footer {
 }
 
 .cardinner {
-  } 
+} 
   
 .top-image {
   align-items: center;
@@ -617,5 +618,12 @@ footer {
   border-radius: 50%;
   border: 2px solid green;
   background-color: #FFF;
-  }
+}
+
+.oneview {
+  height: 50vh;
+  padding: 1vh 1vw;
+  border: 2px solid #000;
+  overflow-y: auto;
   
+}
