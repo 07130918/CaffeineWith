@@ -591,9 +591,23 @@ footer {
   width: 40%;
   margin: 0 auto 2rem;
   padding: 1rem 0;
-  
+  position: relative;
   }
-  
+
+.neji {
+  display: inline-block;
+  position: absolute;
+  top: 1rem;
+  left: 1rem;
+  width: 4vh;
+  height: 4vh;
+  cursor: pointer;
+    
+  &:hover {
+    filter: brightness(0.5);
+  }
+}
+
 .cardinner {
   } 
   
