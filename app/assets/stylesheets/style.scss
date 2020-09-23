@@ -2,7 +2,7 @@
 body {
   background-image: url(coffee-shop-393954_1920.jpg);
   background-size: cover;
-  min-height: 100vh;
+  max-height: 100vh;
   }
   
 .header {
@@ -13,12 +13,25 @@ body {
     position: relative;
     z-index: 1; // ←ドロワーメニューを最前面に持ってくる
     
+    .homelogo {
+      display: inline-block;
+      text-decoration: none;
+      color: #FFF;
+      font-size: 2em;
+      margin: 2vh 0 0 4vw;
+        
+        &:hover {
+         text-shadow: -6px 0px 15px rgba(255, 255, 240, 1),
+         6px 0px 15px rgba(255, 255, 240, 1);
+        }
+      }
+    
     #sidebarMenu {
-      height: 90vh;
       position: fixed;
+      top: 10vh;
       right: 0;
+      height: 90vh;
       width: 20%;
-      margin-top: 10vh;
       transform: translateX(100%);
       transition: transform 250ms ease-in-out;
       background-color: #000;  
@@ -50,8 +63,8 @@ body {
         text-decoration: none;
         
       &:hover {
-         text-shadow: -6px 0px 15px rgba(255, 255, 240, 0.83),
-         6px 0px 15px rgba(255, 255, 240, 0.83);
+         text-shadow: -6px 0px 15px rgba(255, 255, 240, 1),
+         6px 0px 15px rgba(255, 255, 240, 1);
       }
     }
   
