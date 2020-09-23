@@ -15,5 +15,4 @@ $(document).on('turbolinks:load', function() {
             $("#sidebarMenu").css("transition","transform 250ms ease-in-out");
         }
     });
-
 });

@@ -1,0 +1,28 @@
+<div class="setting">
+    <div class="card">
+            <%= link_to image_tag("neji.png", class: "neji"), edit_user_path(current_user) %>
+        <div class="cardinner" >
+         <% if current_user.image.attached? %>
+         <!--image画像を設定しているか否かで分岐、していない際はこちらから指定-->
+            <%= image_tag (current_user.image), class: "top-image" %>
+         <% else %>
+            <%= image_tag 'Sherlock-Holmes.png', class: "top-image" %>
+         <% end %>
+        </div>
+        <p><%= current_user.nickname %></p>
+        <p>今までに飲んだコーヒー: <%= @cups %>杯</p>
+    </div>    
+        
+        
+     <div class="full">
+        <div class="oneview">
+          <% @logs.each do |one| %>
+           <div class="one-log">
+              <p><%= one.text %></p>
+              <%= link_to "destroy this log", caffe_log_path(one.caffe_id, one), method: :delete, class: "one-destroy" %>
+                                               <!--"/caffes/#{one.caffe_id}/logs/#{one.id}"と同義-->
+           </div>
+          <% end %>
+        </div>
+     </div>
+</div>

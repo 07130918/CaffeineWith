@@ -5,6 +5,7 @@ class User < ApplicationRecord
          :recoverable, :rememberable, :validatable
          
   validates :nickname, presence: true
+  # ニックネームを必ず入力させる
   has_one_attached :image
   has_many :logs
 end

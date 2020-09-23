@@ -13,45 +13,33 @@
 
   <body>
     <header class="header">
-    <!------------------------------------------------------------------------->
-    <%= link_to "HOME", root_path, class: "provisional" %>
-     <%= link_to "Everyone's log", all_caffes_path, class: "provisional" %>
-      <% if user_signed_in? %>
-        <%= link_to "ログアウト", destroy_user_session_path, method: :delete, class: "provisional" %>
-        <%= link_to "My page", user_path(current_user), class: "innerlink" %>
-        <%= link_to "プロフィール編集", edit_user_path(current_user), class: "provisional" %>
-      <% else %>
-        <%= link_to "ログイン", new_user_session_path, class: "provisional" %>
-        <%= link_to "新規登録", new_user_registration_path, class: "provisional" %>
-      <% end %>
-<!---------------------------------------------------------    -->
-  <input type="checkbox" class="openSidebarMenu" name="check" id="openSidebarMenu">
-  <label for="openSidebarMenu" class="sidebarIconToggle">
-    <div class="spinner diagonal part-1"></div>
-    <div class="spinner horizontal"></div>
-    <div class="spinner diagonal part-2"></div>
-  </label>
-  
-  <div id="sidebarMenu">
-  <p>Menu</p>
-  
-    <div class="sidebarMenuInner">
-      <%= link_to "Home", root_path, class: "innerlink" %>
-      <%= link_to "Everyone's log", all_caffes_path, class: "innerlink" %>
-      <% if user_signed_in? %>
-        <%= link_to "ログアウト", destroy_user_session_path, method: :delete, class: "innerlink" %>
-        <%= link_to "My page", user_path(current_user), class: "innerlink" %>
-        <%= link_to "プロフィール編集", edit_user_path(current_user), class: "innerlink" %>
-      <% else %>
-        <%= link_to "ログイン", new_user_session_path, class: "innerlink" %>
-        <%= link_to "新規登録", new_user_registration_path, class: "innerlink" %>
-      <% end %>
-    </div>
-  </div>
-<!------------------------------------------------------------->
+      <%= link_to "CaffeineWith", root_path, class: "homelogo" %>
+      
+      <input type="checkbox" class="openSidebarMenu" name="check" id="openSidebarMenu">
+      <label for="openSidebarMenu" class="sidebarIconToggle">
+        <div class="spinner diagonal part-1"></div>
+        <div class="spinner horizontal"></div>
+        <div class="spinner diagonal part-2"></div>
+      </label>
+      
+      <div id="sidebarMenu">
+        <p>Menu</p>
+        <div class="sidebarMenuInner">
+          <%= link_to "Home", root_path, class: "innerlink" %>
+          <%= link_to "Everyone's log", all_caffes_path, class: "innerlink" %>
+          <% if user_signed_in? %>
+            <%= link_to "My page", user_path(current_user), class: "innerlink" %>
+            <%= link_to "プロフィール編集", edit_user_path(current_user), class: "innerlink" %>
+            <%= link_to "ログアウト", destroy_user_session_path, method: :delete, class: "innerlink" %>
+          <% else %>
+            <%= link_to "ログイン", new_user_session_path, class: "innerlink" %>
+            <%= link_to "新規登録", new_user_registration_path, class: "innerlink" %>
+          <% end %>
+        </div>
+      </div>
     </header>
     
-    <%= yield %>
+      <%= yield %>
     
     <footer>
     <p><a href="https://pixabay.com/ja/users/Madun_Digital-283126/?utm_source=link-attribution&amp;utm_medium=referral&amp;utm_campaign=image&amp;utm_content=393954" target="_blank" rel="noopener noreferrer">Madun Digital</a>による<a href="https://pixabay.com/ja/?utm_source=link-attribution&amp;utm_medium=referral&amp;utm_campaign=image&amp;utm_content=393954" target="_blank" rel="noopener noreferrer">Pixabayからの画像</a></p>
