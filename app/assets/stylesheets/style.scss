@@ -5,7 +5,24 @@ body {
   max-height: 100vh;
   overflow-y: hidden;
   }
-  
+// ---------------------------------------------------------
+// このアプリのすべてのスクロールバー設定
+::-webkit-scrollbar {
+  width: 0.4vw;
+}
+
+::-webkit-scrollbar-track {
+  background: #FFF;
+  border: none;
+  border-radius: 1rem;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #CCC;
+  border-radius: 1rem;
+  box-shadow: none;
+}
+// ----------------------------------------------------------------
 .header {
     height: 10vh;
     background: rgba(0,0,0, 0.6); 
@@ -627,3 +644,4 @@ footer {
   overflow-y: auto;
   
 }
+
