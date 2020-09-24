@@ -1,42 +1,79 @@
 .devise-cover {
-    background-color: #FFF;
-    width: 50%;
-    margin: 15vh auto 0;
-    text-align: center;
-    border: 4px solid #7b5544;
-    border-radius: 2%;
-    padding: 2% 0;
-    opacity: 0.9;
+    width: 40%;
+    margin: 10vh auto 0;
+    background: rgba(0,0,0, 0.7); 
+    display: flex;
     
-    h4 {
-        max-width: 30%;
-        margin: 0 auto;
+    h2, h4 {
         font-weight: lighter;
-        border-bottom: 1px solid red;
+        margin: 3vh auto;
+        color: #FFF;
+        border-bottom: 2px solid #FFF;
+        width: 50%;
+        padding-bottom: 1vh;
         }
     }
 
-.field {
-    margin: 1vh 0;
+.devise-cover.sign_up_cover {
+    margin-top: 5vh;
+    
     }
+
+.devise-card {
+    background: rgba(51,51,51, 0.9); 
+    margin: 2vh auto;
+    padding: 2vh 0;
+    width: 90%;
+    box-shadow: 0 0 1rem 1rem rgba(0,0,0,0.2);
+    text-align: center;
+    max-height: 76vh;
+    overflow-y: auto;
+    }
+    
+.field {
+    margin: 2vh 0;
+    }
+
+.field_text, .alert {
+    color: #FFF;
+    }    
     
 .minifield {
-    border: 2px solid #000;
+    height: 3vh;
+    border: 2px solid #FFF;
+    color: #FFF;
     }    
 // --------------------------------------------------------
-.logsign {
+.devise_btn {
+    display: block;
+    margin: 0 auto 2vh;
+    background: #ec7211;
+    width: 50%;
+    border-radius: 5px;
+    padding: 1vh 0;
     color: #FFF;
-    background-color: #00b900;
+    font-weight: bold;
     
     &:hover {
-        color: #00b900;
+        color: #ec7211;
         background-color: #FFF;
         }
-    }
+}
 
-// -------------------------------------------
-.deviselinks {
-    display: inline-block;
-    margin-top: 1vh;
-    text-decoration: none;
+// -devise/shared/_links.html.erb------------------------------------------
+#error_explanation {
+    color: #FFF;
+     
+    ul {
+      list-style: none;
     }
+}
+    
+.deviselinks {
+    text-decoration: none;
+    color: #FFF;
+    
+    &:hover {
+        border-bottom: 2px solid #FFF;
+        }
+}

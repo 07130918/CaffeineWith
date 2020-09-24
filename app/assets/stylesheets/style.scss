@@ -2,7 +2,7 @@
 body {
   background-image: url('coffee-shop-393954_1920.jpg');
   background-size: cover;
-  max-height: 100vh;
+  height: 100vh;
   overflow-y: hidden;
   }
 // ---------------------------------------------------------
@@ -26,7 +26,7 @@ body {
 .header {
     height: 10vh;
     background: rgba(0,0,0, 0.7); 
-    // ↑background-color: #000;, opacity: 0.6;と同義だが
+    // ↑background-color: #000;, opacity: 0.7;と同義だが
     // 透過度を子要素に継承させないことができる
     position: relative;
     z-index: 1; // ←ドロワーメニューを最前面に持ってくる
@@ -498,13 +498,13 @@ footer {
   color: white;
   }
 // ---------------------------------------------------
-// logs/destroy&create html.erb
+// logs/destroy&create html.erbとusers/update.html.erb
 .bulletin {
   width: 80%;
-  height: 10rem;
+  height: 20vh;
   background-color: #333;
   opacity: 0.9;
-  margin: 20% auto 0;
+  margin: 30vh auto 0;
   display: flex;
   justify-content: center;
   position: relative;
@@ -630,14 +630,12 @@ footer {
   }
 }
 
-.cardinner {
-} 
-  
+
 .top-image {
   align-items: center;
   height: 8rem;
   border-radius: 50%;
-  border: 2px solid green;
+  border: 2px solid #ec7211;
   background-color: #FFF;
 }
 
@@ -648,4 +646,59 @@ footer {
   overflow-y: auto;
   
 }
+// users/edit.html.erb-----------------------------------------------
+.editpage {
+  width: 30%;
+  margin: 10vh auto 0;
+  height: 50vh;
+  background: rgba(0,0,0, 0.7); 
+  display: flex;
+  }
 
+.editcard {
+  background: rgba(51,51,51, 0.9); 
+  filter: brightness(95%);
+  margin: auto;
+  width: 90%;
+  height: 90%;
+  box-shadow: 0 0 1rem 1rem rgba(0,0,0,0.2);
+  }  
+
+.info {
+  text-align: center;
+  
+  h3 {
+    margin: 3vh auto;
+    color: #FFF;
+    border-bottom: 2px solid #FFF;
+    width: 50%;
+    padding-bottom: 1vh;
+    }
+  
+  .edit_nickname {
+    height: 3vh;
+    // background: #FFF;
+    border: 2px solid #FFF;
+    color: #FFF;
+    }
+        
+  .field_btn {
+    display: block;
+    margin: 0 auto;
+    background: #ec7211;
+    width: 50%;
+    border-radius: 5px;
+    padding: 1vh 0;
+    color: #FFF;
+    font-weight: bold;
+  }
+    
+  .file-field {
+    display: none;
+  }
+  
+  .done.field_btn {
+    margin-top: 4vh;
+    }
+}
+// --------------------------------------------------------------
