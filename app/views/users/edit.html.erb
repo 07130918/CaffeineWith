@@ -1,15 +1,18 @@
 <div class="editpage">
     <div class="editcard">
         <%= form_for current_user do |f| %>
-            <div class="field">
-              <%= f.file_field :image %>
+            <div class="info">
+              <h3>イメージ画像</h3>
+              <%= f.label :image, "画像をアップロード", class: "file_field_btn" %>
+              <%= f.file_field :image, class: "file-field" %>
             </div>
             
-            <div class="field">
-                <%= f.text_field :nickname %>
+            <div class="info">
+                <h3>ニックネーム</h3>
+                <%= f.text_field :nickname, placeholder: "Nickname" %>
             </div>
           
-            <div class="actions">
+            <div class="info done">
               <%= f.submit "完了" %>
             </div>
         <% end %>

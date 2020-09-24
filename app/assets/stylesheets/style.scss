@@ -26,7 +26,7 @@ body {
 .header {
     height: 10vh;
     background: rgba(0,0,0, 0.7); 
-    // ↑background-color: #000;, opacity: 0.6;と同義だが
+    // ↑background-color: #000;, opacity: 0.7;と同義だが
     // 透過度を子要素に継承させないことができる
     position: relative;
     z-index: 1; // ←ドロワーメニューを最前面に持ってくる
@@ -648,18 +648,45 @@ footer {
 }
 // users/edit.html.erb-----------------------------------------------
 .editpage {
-  width: 60%;
+  width: 30%;
   margin: 10vh auto 0;
-  height: 60vh;
-  background: rgba(51,51,51, 0.9); 
+  height: 50vh;
+  background: rgba(0,0,0, 0.7); 
   display: flex;
   }
 
 .editcard {
-  background: #FFF;
+  background: rgba(51,51,51, 0.9); 
   filter: brightness(95%);
   margin: auto;
   width: 90%;
   height: 90%;
   box-shadow: 0 0 1rem 1rem rgba(0,0,0,0.2);
   }  
+
+.info {
+  text-align: center;
+  
+  h3 {
+    margin: 3vh auto;
+    color: #FFF;
+    border-bottom: 2px solid #FFF;
+    width: 70%;
+    padding-bottom: 1vh;
+    }
+        
+  .file_field_btn {
+    display: block;
+    margin: 0 auto;
+    background:  linear-gradient(#DCE35B, #45B649);
+    width: 50%;
+    border-radius: 5px;
+    padding: 1vh 0;
+    color: #FFF;
+    font-weight: bold;
+  }
+    
+  .file-field {
+    display: none;
+  }
+}
