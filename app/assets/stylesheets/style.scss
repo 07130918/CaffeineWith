@@ -2,7 +2,7 @@
 body {
   background-image: url('coffee-shop-393954_1920.jpg');
   background-size: cover;
-  max-height: 100vh;
+  height: 100vh;
   overflow-y: hidden;
   }
 // ---------------------------------------------------------
@@ -501,10 +501,10 @@ footer {
 // logs/destroy&create html.erb
 .bulletin {
   width: 80%;
-  height: 10rem;
+  height: 20vh;
   background-color: #333;
   opacity: 0.9;
-  margin: 20% auto 0;
+  margin: 35vh auto 0;
   display: flex;
   justify-content: center;
   position: relative;
@@ -630,9 +630,7 @@ footer {
   }
 }
 
-.cardinner {
-} 
-  
+
 .top-image {
   align-items: center;
   height: 8rem;
@@ -648,4 +646,20 @@ footer {
   overflow-y: auto;
   
 }
+// users/edit.html.erb-----------------------------------------------
+.editpage {
+  width: 60%;
+  margin: 10vh auto 0;
+  height: 60vh;
+  background: rgba(51,51,51, 0.9); 
+  display: flex;
+  }
 
+.editcard {
+  background: #FFF;
+  filter: brightness(95%);
+  margin: auto;
+  width: 90%;
+  height: 90%;
+  box-shadow: 0 0 1rem 1rem rgba(0,0,0,0.2);
+  }  

@@ -1,0 +1,19 @@
+<div class="editpage">
+    <div class="editcard">
+        <%= form_for current_user do |f| %>
+            <div class="field">
+              <%= f.file_field :image %>
+            </div>
+            
+            <div class="field">
+                <%= f.text_field :nickname %>
+            </div>
+          
+            <div class="actions">
+              <%= f.submit "完了" %>
+            </div>
+        <% end %>
+    </div>
+</div>
+
+       
