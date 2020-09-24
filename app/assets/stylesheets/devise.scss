@@ -14,14 +14,19 @@
         }
     }
 
+.devise-cover.sign_up_cover {
+    margin-top: 5vh;
+    
+    }
+
 .devise-card {
     background: rgba(51,51,51, 0.9); 
-    filter: brightness(95%);
     margin: 2vh auto;
     padding: 2vh 0;
     width: 90%;
     box-shadow: 0 0 1rem 1rem rgba(0,0,0,0.2);
     text-align: center;
+    max-height: 76vh;
     overflow-y: auto;
     }
     
@@ -41,7 +46,7 @@
 // --------------------------------------------------------
 .devise_btn {
     display: block;
-    margin: 0 auto;
+    margin: 0 auto 2vh;
     background: #ec7211;
     width: 50%;
     border-radius: 5px;
@@ -65,8 +70,6 @@
 }
     
 .deviselinks {
-    display: inline-block;
-    margin-top: 1vh;
     text-decoration: none;
     color: #FFF;
     

@@ -1,4 +1,4 @@
-<div class="devise-cover">
+<div class="devise-cover sign_up_cover">
   <div class="devise-card">
     <h2>新規登録</h2>
     <h4>※イメージ画像以外必須です</h4>
@@ -30,12 +30,12 @@
       </div>
       
       <div class="field">
-        <%= f.label :イメージ画像, class: "field_text" %><br />
+        <%= f.label :プロフィール画像, class: "field_text" %><br />
         <%= f.file_field :image, class: "minifield" %>
       </div>
     
-      <div class="devise_btn">
-        <%= f.submit "新規登録", class: "logsign" %>
+      <div>
+        <%= f.submit "新規登録", class: "devise_btn" %>
       </div>
     <% end %>
     
