@@ -671,11 +671,18 @@ footer {
     margin: 3vh auto;
     color: #FFF;
     border-bottom: 2px solid #FFF;
-    width: 70%;
+    width: 50%;
     padding-bottom: 1vh;
     }
+  
+  .edit_nickname {
+    height: 3vh;
+    // background: #FFF;
+    border: 2px solid #FFF;
+    color: #FFF;
+    }
         
-  .file_field_btn {
+  .field_btn {
     display: block;
     margin: 0 auto;
     background:  linear-gradient(#DCE35B, #45B649);
@@ -689,4 +696,8 @@ footer {
   .file-field {
     display: none;
   }
+  
+  .done.field_btn {
+    margin-top: 4vh;
+    }
 }
