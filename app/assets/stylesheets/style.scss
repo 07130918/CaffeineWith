@@ -36,7 +36,8 @@ body {
       text-decoration: none;
       color: #FFF;
       font-size: 2em;
-      margin: 2vh 0 0 4vw;
+      line-height: 10vh;
+      margin-left: 5vw;
         
         &:hover {
          text-shadow: -6px 0px 15px rgba(255, 255, 240, 1),
@@ -99,19 +100,20 @@ body {
       transition: all 0.3s;
       cursor: pointer;
       position: absolute;
-      top: 4vh;
-      right: 4vh;
-      width: 3%;
+      top: 2vh;
+      right: 4vw;
+      width: 4vw;
+      height: 6vh;
       opacity: 0.9;
     }
 
     .spinner {
         transition: all 0.3s;
         position: absolute;
-        top: 10%;
-        right: 10%;
+        top: 35%;
+        left: 10%;
         height: 3px;
-        width: 100%;
+        width: 80%;
         background-color: #fff;
     }
     
@@ -149,7 +151,7 @@ body {
       
       .diagonal.part-2 {
         transform: rotate(135deg);
-        margin-top: -9px;
+        margin-top: -8px;
       }
     }
       
