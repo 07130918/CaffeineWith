@@ -162,7 +162,7 @@ footer {
   position: absolute;
   bottom: 0;
   width: 100%;
-  font-size: 1%;
+  font-size: 1vh;
   
   p {
     color: white;
@@ -450,31 +450,41 @@ footer {
 // -------------------------------------------------------------------------
 // logs/all.html.erb(users/show.html.erb)
 .setting {
-  width: 80%;
-  height: 90vh;
-  background-color: #F2F2F2;
+  width: 80vw;
+  background: rgba(0,0,0, 0.7); 
+  margin: 2vh auto;
+  min-height: 84vh;
+  padding: 2vh 0;
+  }
+
+.whitecover {
+  min-height: 80vh;
+  width: 76vw;
   margin: 0 auto;
-  padding-top: 2rem;
+  background: rgba(51,51,51, 0.9); 
+  filter: brightness(95%);
+  padding-top: 2vh;
   }
   
-.full {   // ←.fullもusers/show.html.erbで再利用
+.full {
   width: 70%;
   margin: 0 auto;
   }
 
 .one-log {
   height: 10vh;
-  margin-bottom: 1vh;
-  border: 3px solid #7b5544;
+  margin-bottom: 2vh;
+  border: 3px solid #F2F2F2;
   position: relative;
   
    p {
      text-decoration: none;
-     color: #000;
+     color: #F2F2F2;
      position: absolute;
      top: 10%;
      left: 2%;
      max-width: 75%;
+    // ↑deleteボタンを付けたら変える
      table-layout: fixed;
      word-wrap: break-word;
      max-height: 10vh;
@@ -484,20 +494,23 @@ footer {
 .one-destroy {
   position: absolute;
   top: 50%;
-  right: 0;
+  right: 2%;
   transform: translateY(-50%);
   display: inline-block;
   padding: 0.2rem;
   background-color: #FF0000;
-  color: white;
+  color: #F2F2F2;
   text-decoration: none;
   border-radius: 20px;
   }
 
 .pagnation {
-  // width: 100%;
-  // text-decoration: none;
-  color: white;
+  
+  .first, .prev, .page, .next, .last {
+    color: #F2F2F2;
+    text-decoration: none;
+    }
+  
   }
 // ---------------------------------------------------
 // logs/destroy&create html.erbとusers/update.html.erb
