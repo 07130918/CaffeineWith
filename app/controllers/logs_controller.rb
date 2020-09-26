@@ -3,6 +3,11 @@ class LogsController < ApplicationController
      before_action :authenticate_user!, except: [:index, :all]
     
     def index
+        if user_signed_in?
+            c_id = Log.created_today.where(user_id: current_user.id).pluck("caffe_id")
+            caffeine = Caffe.where(id: c_id).pluck("caffeine_mg")
+            @today = caffeine.sum
+        end
     end
     
     def all

@@ -8,4 +8,7 @@ class User < ApplicationRecord
   # ニックネームを必ず入力させる
   has_one_attached :image
   has_many :logs
+  has_many :caffes, through: :logs
+  # logsテーブルを通すとusers,caffesは多対多
+  
 end

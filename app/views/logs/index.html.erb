@@ -8,11 +8,15 @@
                 <p>このwebアプリケーションはあなたのカフェイン摂取量が400mg/日を超えた時に摂取の抑制を促します</p>
                 <p>コーヒーなどを飲む際に上のボタンを押してください!</p>
                 <p>またコーヒーなどのを飲む際の感想などを記録、投稿することができます</p>
-                <p class="emergency">今日はカフェインを400mg以上摂取しているため気を付けてください!</p>
+                <% if user_signed_in? && @today >= 400 %>
+                    <p class="emergency">今日はカフェインを400mg以上摂取しているため気を付けてください!</p>
+                <% end %>
                 <p>This web application helps reduce your caffeine intake when it exceeds 400 mg / day.</p>
                 <p>Please press the button above when drinking coffee etc.!</p>
                 <p>You can also record and post your impressions when drinking coffee etc.</p>
-                <p class="emergency">Be careful as you are taking over 400mg of caffeine today!</p>
+                <% if user_signed_in? && @today >= 400 %>
+                    <p class="emergency">Be careful as you are taking over 400mg of caffeine today!</p>
+                <% end %>
             </div>   
         </div>
 <!--jQueryで切り替わり---------------------------------------------------------------------------------------------------------------------------------            -->
