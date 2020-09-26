@@ -480,15 +480,18 @@ footer {
    p {
      text-decoration: none;
      color: #F2F2F2;
-    // position: absolute;
-    // top: 10%;
-    // left: 2%;
      max-width: 75%;
     // ↑deleteボタンを付けたら変える
      table-layout: fixed;
      word-wrap: break-word;
      max-height: 10vh;
      }
+    
+    .post_time {
+      position: absolute;
+      top: 0;
+      right: 0;
+      }
   }
   
 .one-destroy {
