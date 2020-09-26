@@ -16,13 +16,7 @@
         
      <div class="full">
         <div class="oneview">
-          <% @logs.each do |one| %>
-           <div class="one-log">
-              <p><%= one.text %></p>
-              <%= link_to "destroy this log", caffe_log_path(one.caffe_id, one), method: :delete, class: "one-destroy" %>
-                                               <!--"/caffes/#{one.caffe_id}/logs/#{one.id}"と同義-->
-           </div>
-          <% end %>
+            <%= render partial: "logs/log", collection: @logs %>
         </div>
      </div>
 </div>
