@@ -1,7 +1,8 @@
 <!--render => logs/all.html.erb users/show.html.erb-->
 <div class="one-log">
     <p class="name"><%= log.user.nickname %><span class="ago">(<%= time_ago_in_words(log.created_at) %>前)</span></p>
-    <p><%= log.text %></p>
+    <p><%= log.text.truncate(74) %></p>
+    <!--74文字以上の場合末尾に...をつけ省略-->
     <p class="strftime"><%= log.created_at.strftime('%m/%d %H:%M') %></p>
     
     <% if user_signed_in? && log.user_id == current_user.id %>
