@@ -3,10 +3,18 @@ class LogsController < ApplicationController
      before_action :authenticate_user!, except: [:index, :all]
     
     def index
+    
+        if user_signed_in?
+            c_id = Log.created_today.where(user_id: current_user.id).pluck(:caffe_id)
+                        # created_todayはlog.rbに定義
+            caffeine = c_id.map{|id| Caffe.find(id).caffeine_mg}
+            @today_caffeine = caffeine.sum
+        end
+        
     end
     
     def all
-        @logs = Log.page(params[:page]).per(7).order("created_at DESC")
+        @logs = Log.page(params[:page]).per(6).order("created_at DESC")
     end
     
     def new

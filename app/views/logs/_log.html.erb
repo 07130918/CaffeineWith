@@ -1,0 +1,11 @@
+<!--render => logs/all.html.erb users/show.html.erb-->
+<div class="one-log">
+    <p><%= log.user.nickname %><p>
+    <p><%= log.text %></p>
+    <p class="post_time"><%= time_ago_in_words(log.created_at) %>前 (<%= log.created_at.strftime('%m/%d %H:%M') %>)</p>
+    
+    <% if user_signed_in? && log.user_id == current_user.id %>
+        <%= link_to "destroy this log", caffe_log_path(log.caffe_id, log), method: :delete, class: "one-destroy" %>
+                                        <!--"/caffes/#{log.caffe_id}/logs/#{log.id}"と同義-->
+    <% end %>                                  
+</div>
