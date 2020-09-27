@@ -1,8 +1,14 @@
-.pagination {
-    
-    span {
-        color: #F2F2F2;
-        text-decoration: none;
+nav.pagination {
+
+    &:hover {
+        cursor: pointer;
         }
-    
+
+    span {
+        color: skyblue;
+        a {
+            text-decoration: none;
+            color: #FFF;
+            }
+        }
     }

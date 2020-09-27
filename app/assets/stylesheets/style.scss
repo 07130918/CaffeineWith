@@ -662,7 +662,8 @@ footer {
 
 .top-image {
   align-items: center;
-  height: 8rem;
+  height: 9rem;
+  width: 9rem;
   border-radius: 50%;
   border: 2px solid #ec7211;
   background-color: #FFF;
@@ -670,7 +671,7 @@ footer {
 
 .oneview {
   height: 50vh;
-  padding: 1vh 1vw;
+  padding: 0 1vw;
   overflow-y: auto;
 
     &::-webkit-scrollbar-track {
