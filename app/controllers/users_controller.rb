@@ -1,7 +1,7 @@
 class UsersController < ApplicationController
     
     def show
-        @logs = Log.where(user_id: current_user.id)
+        @logs = Log.where(user_id: current_user.id).order("created_at DESC")
         @cups = Log.where(user_id: current_user.id).count
     end
     

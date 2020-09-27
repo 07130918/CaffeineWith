@@ -520,7 +520,7 @@ footer {
   border-radius: 50%;
   
     &:hover{
-        background-color: red;
+        background: rgba(255,0,0,0.7); 
       }
   }
 
@@ -636,11 +636,13 @@ footer {
 // users/show.html.erb---------------------------------------------
 .card {
   text-align: center;
-  box-shadow: 0 0 1rem 1rem rgba(0,0,0,0.2);
+  background: #F2F2F2;
   width: 40%;
   margin: 0 auto 2rem;
   padding: 1rem 0;
   position: relative;
+  border: solid 2px transparent;
+  border-image: url("https://www.infocrest.co.jp/ykxbdgs5qgq3/uploads/2019/10/blog_m02_2.jpg") 1 stretch;
   }
 
 .neji {
@@ -669,9 +671,15 @@ footer {
 .oneview {
   height: 50vh;
   padding: 1vh 1vw;
-  border: 2px solid #000;
   overflow-y: auto;
-  
+
+    &::-webkit-scrollbar-track {
+      background: transparent;
+    }
+    
+    &::-webkit-scrollbar-thumb {
+      background: #FFF;
+    }
 }
 // users/edit.html.erb-----------------------------------------------
 .editpage {
