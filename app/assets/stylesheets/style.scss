@@ -470,13 +470,14 @@ footer {
   width: 70%;
   margin: 0 auto;
   }
-
+// --------------------------------------------------------------------
+// logs/_log.html.erb(allとusers/showのテンプレート)
 .one-log {
   height: 10vh;
   margin-bottom: 2vh;
   border: 3px solid #F2F2F2;
   position: relative;
-  
+
    p {
      text-decoration: none;
      color: #F2F2F2;
@@ -484,8 +485,22 @@ footer {
     // ↑deleteボタンを付けたら変える
      table-layout: fixed;
      word-wrap: break-word;
-     max-height: 10vh;
+     margin-left: 1vw;
+     .ago {
+       display: inline-block;
+      margin-left: 4px;
+       }
+       
+     &:hover {
+       cursor: default;
+       }
      }
+     
+    .strftime {
+      position: absolute;
+      bottom: 0;
+      right: 0;
+      }
     
     .post_time {
       position: absolute;
@@ -496,15 +511,17 @@ footer {
   
 .one-destroy {
   position: absolute;
-  top: 50%;
-  right: 2%;
+  
+  top: 4vh;
+  right: 2vw;
   transform: translateY(-50%);
   display: inline-block;
   padding: 0.2rem;
-  background-color: #FF0000;
-  color: #F2F2F2;
-  text-decoration: none;
-  border-radius: 20px;
+  border-radius: 50%;
+  
+    &:hover{
+        background-color: red;
+      }
   }
 
 // ---------------------------------------------------
