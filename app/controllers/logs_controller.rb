@@ -6,13 +6,11 @@ class LogsController < ApplicationController
     
         if user_signed_in?
             c_id = Log.created_today.where(user_id: current_user.id).pluck(:caffe_id)
-            # c_id = Log.created_today.where(user_id: 9).pluck(:caffe_id)
                         # created_todayはlog.rbに定義
-            each.doで1つずつ取り出してしまうのはどうだろう？？9/26
-            caffeine = Caffe.find(c_id).pluck(:caffeine_mg)
-            # caffeine = Caffe.where(id: c_id).pluck(:caffeine_mg)
-            @today_caffeine = caffeine.inject(:+)
+            caffeine = c_id.map{|id| Caffe.find(id).caffeine_mg}
+            @today_caffeine = caffeine.sum
         end
+        
     end
     
     def all
