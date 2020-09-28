@@ -11,4 +11,11 @@ class User < ApplicationRecord
   has_many :caffes, through: :logs
   # logsテーブルを通すとusers,caffesは多対多
   
+  # ↓簡易ログイン用
+  def self.guest
+    find_or_create_by!(email: 'guest@com', nickname: 'guest') do |user|
+    user.password = SecureRandom.urlsafe_base64
+    end
+  end
+  
 end
