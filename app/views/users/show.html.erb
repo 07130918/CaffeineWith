@@ -10,7 +10,9 @@
          <% end %>
         </div>
         <p><%= current_user.nickname %></p>
-        <p>今までに飲んだコーヒー: <%= @cups %>杯</p>
+        <p>本日飲んだコーヒー: <%= @today %>杯</p>
+        <p>カフェイン摂取量約<%= @today_caffeine %>mg/day</p>
+        <p>CaffeineWithを始めてから飲んだコーヒー: <%= @cups %>杯</p>
     </div>    
         
         
