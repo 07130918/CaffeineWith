@@ -8,5 +8,9 @@ Rails.application.routes.draw do
       get 'all' => 'logs#all'
       end
     end  
-  resources :users, only: [:show, :edit, :update]  
+  resources :users, only: [:show, :edit, :update]
+  # ↓簡易ログイン用
+   devise_scope :user do
+    post 'users/guest_sign_in', to: 'users/sessions#new_guest'
+  end
 end

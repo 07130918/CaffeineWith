@@ -45,6 +45,16 @@ body {
         }
       }
     
+    // フラッシュメッセージ
+    .flash {
+      position: absolute;
+      bottom: 0;
+      left: 50%;
+      transform: translateX(-50%);
+      color: #FFF;
+      font-size: 1rem;
+    }
+    // -----------------------
     #sidebarMenu {
       position: fixed;
       top: 10vh;
@@ -173,7 +183,7 @@ footer {
       }
     }  
   }
-// ----------------------------------------------------------------
+  // ------------------------------------------------------------
 // logs/index.html.erb
 .main {
     display: flex;

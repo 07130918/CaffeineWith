@@ -14,6 +14,7 @@
   <body>
     <header class="header">
       <%= link_to "CaffeineWith", root_path, class: "homelogo" %>
+      <div class="flash"><%= flash[:notice] %></div>
       
       <input type="checkbox" class="openSidebarMenu" name="check" id="openSidebarMenu">
       <label for="openSidebarMenu" class="sidebarIconToggle">
@@ -34,11 +35,12 @@
           <% else %>
             <%= link_to "Log in", new_user_session_path, class: "innerlink" %>
             <%= link_to "Sign up", new_user_registration_path, class: "innerlink" %>
+            <%= link_to "Guest log in(企業様はこちら)", users_guest_sign_in_path, method: :post, class: "innerlink" %>
           <% end %>
         </div>
       </div>
     </header>
-    
+      
       <%= yield %>
     
     <footer>
