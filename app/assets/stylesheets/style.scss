@@ -511,7 +511,6 @@ footer {
   
 .one-destroy {
   position: absolute;
-  
   top: 4vh;
   right: 2vw;
   transform: translateY(-50%);
@@ -520,7 +519,7 @@ footer {
   border-radius: 50%;
   
     &:hover{
-        background: rgba(255,0,0,0.7); 
+      background: #c00;
       }
   }
 
