@@ -453,7 +453,7 @@ footer {
   width: 80vw;
   background: rgba(0,0,0, 0.7); 
   margin: 2vh auto;
-  min-height: 84vh;
+  height: 84vh;
   padding: 2vh 0;
   }
 
@@ -470,13 +470,14 @@ footer {
   width: 70%;
   margin: 0 auto;
   }
-
+// --------------------------------------------------------------------
+// logs/_log.html.erb(allとusers/showのテンプレート)
 .one-log {
   height: 10vh;
   margin-bottom: 2vh;
   border: 3px solid #F2F2F2;
   position: relative;
-  
+
    p {
      text-decoration: none;
      color: #F2F2F2;
@@ -484,8 +485,22 @@ footer {
     // ↑deleteボタンを付けたら変える
      table-layout: fixed;
      word-wrap: break-word;
-     max-height: 10vh;
+     margin-left: 1vw;
+     .ago {
+       display: inline-block;
+      margin-left: 4px;
+       }
+       
+     &:hover {
+       cursor: default;
+       }
      }
+     
+    .strftime {
+      position: absolute;
+      bottom: 0;
+      right: 0;
+      }
     
     .post_time {
       position: absolute;
@@ -496,15 +511,16 @@ footer {
   
 .one-destroy {
   position: absolute;
-  top: 50%;
-  right: 2%;
+  top: 4vh;
+  right: 2vw;
   transform: translateY(-50%);
   display: inline-block;
   padding: 0.2rem;
-  background-color: #FF0000;
-  color: #F2F2F2;
-  text-decoration: none;
-  border-radius: 20px;
+  border-radius: 50%;
+  
+    &:hover{
+      background: #c00;
+      }
   }
 
 // ---------------------------------------------------
@@ -619,11 +635,13 @@ footer {
 // users/show.html.erb---------------------------------------------
 .card {
   text-align: center;
-  box-shadow: 0 0 1rem 1rem rgba(0,0,0,0.2);
+  background: #F2F2F2;
   width: 40%;
   margin: 0 auto 2rem;
   padding: 1rem 0;
   position: relative;
+  border: solid 2px transparent;
+  border-image: url("https://www.infocrest.co.jp/ykxbdgs5qgq3/uploads/2019/10/blog_m02_2.jpg") 1 stretch;
   }
 
 .neji {
@@ -643,18 +661,25 @@ footer {
 
 .top-image {
   align-items: center;
-  height: 8rem;
+  height: 9rem;
+  width: 9rem;
   border-radius: 50%;
   border: 2px solid #ec7211;
   background-color: #FFF;
 }
 
 .oneview {
-  height: 50vh;
-  padding: 1vh 1vw;
-  border: 2px solid #000;
+  height: 40vh;
+  padding: 0 1vw;
   overflow-y: auto;
-  
+
+    &::-webkit-scrollbar-track {
+      background: transparent;
+    }
+    
+    &::-webkit-scrollbar-thumb {
+      background: #FFF;
+    }
 }
 // users/edit.html.erb-----------------------------------------------
 .editpage {

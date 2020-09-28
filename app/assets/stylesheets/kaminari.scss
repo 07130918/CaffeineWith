@@ -1,8 +1,25 @@
-.pagination {
-    
-    span {
-        color: #F2F2F2;
+nav.pagination {
+
+    &:hover {
+        cursor: pointer;
+        }
+
+    a {
         text-decoration: none;
+        color: #FFF;
+    }
+    
+    .current {
+        color: #FFD700;
+    }
+    
+    a, .current {
+        &:hover{
+            text-decoration: underline;
+            }
         }
     
-    }
+    .gap {
+        color: #FFF;
+        }
+}
