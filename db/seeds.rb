@@ -30,5 +30,5 @@ require "csv"
 
 caffes_csv = CSV.readlines("db/caffes.csv")
 caffes_csv.each do |row|
-  Product.create(caffeine_mg: row[1], store: row[2], size: row[3])
+  Product.create(caffeine_mg: row[1], store: row[2], size: row[3], created_at: row[4], updated_at: row[5])
 end
