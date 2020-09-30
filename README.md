@@ -31,7 +31,8 @@
 佐藤宏太
 Email <kotawonderlandjapan@outlook.jp>
 
-#[CaffeineWith, an app that records the amount of caffeine you consume today by drinking coffee](https://caffeinewith.herokuapp.com/)
+
+[CaffeineWith, an app that records the amount of caffeine you consume today by drinking coffee](https://caffeinewith.herokuapp.com/)
 
 Thank you for watching. This is Kota Sato.  
 For companies, there is a guest login at the bottom of the drawer menu on the top page, so please use that.  
