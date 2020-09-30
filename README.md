@@ -1,4 +1,4 @@
-# コーヒーを飲むことにより今日摂取したカフェインの量を記録してくれるアプリ`<a href="https://caffeinewith.herokuapp.com/" target="_blank">CaffeineWith</a>`
+# コーヒーを飲むことにより今日摂取したカフェインの量を記録してくれるアプリ[CaffeineWith](https://caffeinewith.herokuapp.com/)
 
 見ていただきありがとうございます。佐藤宏太です。よろしくお願いいたします。
 企業様はトップページのドロワーメニューの1番下にゲストログインがありますのでそちらからお願いします。
