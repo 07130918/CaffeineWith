@@ -6,7 +6,9 @@
 
 * 開発環境 AWS EC2
 
-* Database mysql(開発環境)  
+* Database mysql
+
+* デプロイ heroku
   
 #アプリの機能一覧
 
@@ -35,7 +37,9 @@ For companies, there is a guest login at the bottom of the drawer menu on the to
 
 * Development environment AWS EC2
 
-* Database mysql(Development environment)  
+* Database mysql
+
+*Deploy heroku
 
 #App function list
 
