@@ -1,24 +1,25 @@
 # README
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+*コーヒーを飲むことにより今日摂取したカフェインの量を記録してくれるアプリCaffeineWith*
 
-Things you may want to cover:
+* Ruby 2.5.1 フレームワーク Rails 5.2.4.4
 
-* Ruby version
+* 開発環境 AWS EC2
 
-* System dependencies
+* Database mysql(開発環境)  
+  
+#アプリの機能一覧
 
-* Configuration
+* どの店舗で何を飲んだのかを記録,投稿する機能  
 
-* Database creation
+* 投稿をもとに1日のカフェイン摂取量が400mgを超えた時トップページに警告文を表示します
 
-* Database initialization
+* 投稿したユーザーが自分であった場合その投稿を消すことができる機能  
 
-* How to run the test suite
+* ユーザー登録,ユーザー情報変更,更新機能  
 
-* Services (job queues, cache servers, search engines, etc.)
+* ユーザー情報には画像を設定することができます(gem mini_magick)
 
-* Deployment instructions
+* ログイン機能,企業様用簡易ログイン機能(gem devise)
 
-* ...
+* ページネーション機能(gem kaminari)
