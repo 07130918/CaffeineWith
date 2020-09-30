@@ -750,6 +750,11 @@ footer {
 // responsive design
 @media screen and (max-width: 670px) {
   
+  ::-webkit-scrollbar {
+  width: 0.4vw;
+  height: 0.5vh;
+  }
+
   ::-webkit-scrollbar-track {
     background: transparent;
     border: none;
@@ -781,12 +786,13 @@ footer {
     }
   // index.html.erb--------------------------------------------
   .wrapper {
-    bottom: 2vh;
     display: flex;
     align-items: flex-end;
     position: absolute;
+    bottom: 2vh;
     left: -9vw;
     }  
+    
   .button {
     height: 30%;
     width: 40%;
@@ -816,28 +822,32 @@ footer {
     background: rgba(51,51,51,0.9);
     margin-top: 20vh;
     overflow-x: scroll;
-  
-    .item{
-        overflow-x: auto;
-        
-      .size.wid{
-        width: 200%;
-        display: flex;
-        padding: 0 15%;
+    
+    .item {
+      .size.wid {
+        width: 90%;
         
         &::-webkit-scrollbar-thumb {
           background: #CCC;
-          border-radius: 20px;
+          }
         }
+          
+          .scroll-contents {
+            display: flex;
+            width: 90%;
+            margin-bottom: 8px;
+              }
+            
+            .sbtn.starbucks, .sbtn.tullys {
+              width: 150%;
+            }
         
         .sbtn {
           display: inline-block;
-          width: 200%;
           padding: 0 5%;
           margin: 0 1%;
         }
       }
-    }
   }
     
   .eggs {
@@ -852,6 +862,7 @@ footer {
   // logs/destroy&create html.erbとusers/update.html.erb---------
   .whitecover{
     max-height: 90%;
+    overflow: hidden;
     }
   
   .bulletin {
