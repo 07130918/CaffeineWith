@@ -52,3 +52,6 @@ For companies, there is a guest login at the bottom of the drawer menu on the to
 * Login function, simple login function for companies (gem devise)
 
 * Pagination function (gem kaminari)
+
+Kota Sato
+Email <kotawonderlandjapan@outlook.jp>
