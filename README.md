@@ -37,7 +37,6 @@ Email <kotawonderlandjapan@outlook.jp>
 Thank you for watching. This is Kota Sato.  
 For companies, there is a guest login at the bottom of the drawer menu on the top page, so please use that.  
 Also, please do not forget to log out when closing the tab.
-<https://caffeinewith.herokuapp.com/>
 
 * Ruby 2.5.1 Framework Rails 5.2.4.4
 
