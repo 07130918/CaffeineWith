@@ -1,4 +1,4 @@
-# [コーヒーを飲むことにより今日摂取したカフェインの量を記録してくれるアプリCaffeineWith](https://caffeinewith.herokuapp.com/){:target="_blank"}
+# [コーヒーを飲むことにより今日摂取したカフェインの量を記録してくれるアプリCaffeineWith](https://caffeinewith.herokuapp.com/)
 
 見ていただきありがとうございます。佐藤宏太です。よろしくお願いいたします。
 企業様はトップページのドロワーメニューの1番下にゲストログインがありますのでそちらからお願いします。
@@ -31,7 +31,7 @@
 佐藤宏太
 Email <kotawonderlandjapan@outlook.jp>
 
-#CaffeineWith, an app that records the amount of caffeine you consume today by drinking coffee
+#[CaffeineWith, an app that records the amount of caffeine you consume today by drinking coffee](https://caffeinewith.herokuapp.com/)
 
 Thank you for watching. This is Kota Sato.
 For companies, there is a guest login at the bottom of the drawer menu on the top page, so please use that.
