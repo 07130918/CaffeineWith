@@ -44,7 +44,7 @@ Also, please do not forget to log out when closing the tab.
 
 * Database mysql
 
-*Deploy heroku
+* Deploy heroku
 
 #App function list
 
