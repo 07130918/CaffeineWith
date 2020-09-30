@@ -1,6 +1,9 @@
 # コーヒーを飲むことにより今日摂取したカフェインの量を記録してくれるアプリCaffeineWith
+
 見ていただきありがとうございます。佐藤宏太です。よろしくお願いいたします。
 企業様はトップページのドロワーメニューの1番下にゲストログインがありますのでそちらからお願いします。
+またタブを閉じる際にはログアウトをお忘れないよう、お願いします。
+<https://caffeinewith.herokuapp.com/>
 
 * Ruby 2.5.1 フレームワーク Rails 5.2.4.4
 
@@ -30,8 +33,11 @@
 Email <kotawonderlandjapan@outlook.jp>
 
 #CaffeineWith, an app that records the amount of caffeine you consume today by drinking coffee
+
 Thank you for watching. This is Kota Sato.
 For companies, there is a guest login at the bottom of the drawer menu on the top page, so please use that.
+Also, please do not forget to log out when closing the tab.
+<https://caffeinewith.herokuapp.com/>
 
 * Ruby 2.5.1 Framework Rails 5.2.4.4
 
