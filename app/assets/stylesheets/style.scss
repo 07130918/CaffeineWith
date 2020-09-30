@@ -844,9 +844,42 @@ footer {
     width: 300%;
     padding: 0 6%;
     }
-
-
+  // all.html.erb---------------------------------------------
+  .full {
+    width: 92%;
+    }
     
+  // logs/destroy&create html.erbとusers/update.html.erb---------
+  .whitecover{
+    max-height: 90%;
+    }
   
+  .bulletin {
+    width: 94%;
+  }
+    
+  .mini {
+    width: 100%;
+    }
+  
+  .minibtn {
+    margin: 0 3%;
+    }
+    
+  // users.show.html.erb--------------------------------
+  .card {
+    width: 92%;
+    padding: 10px;
+    margin-bottom: 10px;
+    }
+  
+  .oneview {
+    height: 36vh;
+    }  
+  
+  // edit.html.erb------------------
+    .editpage {
+      width: 92%;
+      }
 }
 

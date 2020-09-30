@@ -77,3 +77,16 @@
         border-bottom: 2px solid #FFF;
         }
 }
+
+// responsive design----------------------------
+@media screen and (max-width: 670px) {
+
+.devise-cover{
+    width: 92%;
+    }
+
+#user_image {
+    width: 90%;
+    }
+
+}
