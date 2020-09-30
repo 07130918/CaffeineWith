@@ -68,3 +68,6 @@ gem 'pry-rails'
 gem 'kaminari'
 gem 'rails-i18n'
 gem 'mini_magick'
+group :production do
+  gem 'rails_12factor'
+end
