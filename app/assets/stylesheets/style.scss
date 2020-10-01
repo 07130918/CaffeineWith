@@ -750,8 +750,9 @@ footer {
 // responsive design
 @media screen and (max-width: 670px) {
   body {
+    background-image: none;
+    overflow-y: hidden;
     max-height: 100vh;
-    background-size: auto 100%;
     }
     
   ::-webkit-scrollbar {
