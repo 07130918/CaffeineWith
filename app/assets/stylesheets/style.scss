@@ -751,6 +751,7 @@ footer {
 @media screen and (max-width: 670px) {
   body {
     max-height: 100vh;
+    background-size: auto 100vh;
     }
     
   ::-webkit-scrollbar {
