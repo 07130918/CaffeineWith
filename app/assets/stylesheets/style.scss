@@ -749,8 +749,13 @@ footer {
 // --------------------------------------------------------------
 // responsive design
 @media screen and (max-width: 670px) {
+  html {
+    max-height: 100vh;
+    }
+    
   body {
     max-height: 100vh;
+    overflow-y: hidden;
     }
     
   ::-webkit-scrollbar {
