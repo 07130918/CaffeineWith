@@ -751,7 +751,7 @@ footer {
 @media screen and (max-width: 670px) {
   body {
     max-height: 100vh;
-    background-size: auto 100vh;
+    background-size: auto 100%;
     }
     
   ::-webkit-scrollbar {
@@ -861,7 +861,7 @@ footer {
     }
   // new.thml.erb---------------------------------------------
   .cover {
-    margin-top: 10vh;
+    margin: 10vh auto 0;
     }
   
   // all.html.erb---------------------------------------------
