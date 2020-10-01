@@ -749,7 +749,10 @@ footer {
 // --------------------------------------------------------------
 // responsive design
 @media screen and (max-width: 670px) {
-  
+  body {
+    max-height: 100vh;
+    }
+    
   ::-webkit-scrollbar {
   width: 0.4vw;
   height: 0.5vh;
@@ -790,12 +793,13 @@ footer {
     align-items: flex-end;
     position: absolute;
     bottom: 2vh;
-    left: -9vw;
+    left: -5vw;
+    margin: 0 auto;
     }  
     
   .button {
     height: 30%;
-    width: 40%;
+    width: 30%;
     position: absolute;
     top: -10%;
     left: 50%;
@@ -803,7 +807,7 @@ footer {
     }
 
   .explanation {
-    width: 98vw;
+    width: 90vw;
     max-height: 30vh;
     overflow-y: scroll;
     margin-top: 0;
@@ -815,7 +819,7 @@ footer {
     margin: 3vh auto 0;
     position: absolute;
     top: 0;
-    left: -9vw;
+    left: -5vw;
     }
   
   .items{
@@ -854,17 +858,32 @@ footer {
     width: 300%;
     padding: 0 6%;
     }
-  // all.html.erb---------------------------------------------
-  .full {
-    width: 92%;
+  // new.thml.erb---------------------------------------------
+  .cover {
+    margin-top: 10vh;
     }
-    
-  // logs/destroy&create html.erbとusers/update.html.erb---------
+  
+  // all.html.erb---------------------------------------------
+  .setting {
+    width: 100vw;
+    margin: 2vh 0;
+    }
+  
   .whitecover{
     max-height: 90%;
     overflow: hidden;
+    width: 100vw;
+    }
+    
+  .full {
+    width: 98vw;
     }
   
+  .one-log>p {
+    font-size: 12px;
+    }  
+  
+  // logs/destroy&create html.erbとusers/update.html.erb---------
   .bulletin {
     width: 94%;
   }
@@ -891,6 +910,7 @@ footer {
   // edit.html.erb------------------
     .editpage {
       width: 92%;
+      height: 56vh;
       }
 }
 
