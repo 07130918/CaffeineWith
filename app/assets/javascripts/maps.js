@@ -6,10 +6,8 @@ function initMap() {
     zoom: 15
   });
   
-  //情報ウィンドウのインスタンスの生成（後でマーカーに紐付け）
   var infowindow = new google.maps.InfoWindow();
   
-  //PlacesService のインスタンスの生成（引数に map を指定）
   var service = new google.maps.places.PlacesService(map);
   
   if(!navigator.geolocation){ 
@@ -30,20 +28,14 @@ function initMap() {
     };
     //情報ウィンドウに現在位置を指定
     infowindow.setPosition(pos);
-    //情報ウィンドウのコンテンツを設定
-    infowindow.setContent('現在位置を取得しました。');
-    //情報ウィンドウを表示
-    infowindow.open(map);
     //マップの中心位置を指定
     map.setCenter(pos);
     
     //種類（タイプ）やキーワードをもとに施設を検索（プレイス検索）するメソッド nearbySearch()
     service.nearbySearch({
       location: pos,  //検索するロケーション
-      radius: 500,  //検索する半径（メートル）
+      radius: 750,  //検索する半径（メートル）
       name: ['カフェ']  //タイプで検索。文字列またはその配列で指定
-      //キーワードで検索する場合は name:'レストラン' や ['レストラン','中華'] のように指定
- 
     }, callback);  //コールバック関数（callback）は別途定義
  
     //コールバック関数には results, status が渡されるので、status により条件分岐
