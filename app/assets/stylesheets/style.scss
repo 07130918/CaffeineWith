@@ -746,6 +746,18 @@ footer {
     margin-top: 4vh;
     }
 }
+// maps--------------------------------------
+#map {
+  height: 80vh;
+  width: 80vw;
+  margin: 0 auto 0;
+}
+
+h2 {
+    margin-left: 10vw;
+    color: white;
+    }
+
 // --------------------------------------------------------------
 // responsive design
 @media screen and (max-width: 670px) {
