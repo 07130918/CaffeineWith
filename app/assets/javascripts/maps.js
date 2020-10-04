@@ -1,14 +1,8 @@
-function initMap() {
-  var target = document.getElementById('map');  
-  var tokyo = {lat: 35.681167, lng: 139.767052};  //東京駅の緯度経度
-  var map = new google.maps.Map(document.getElementById('map'), {
-    center: tokyo,
-    zoom: 16
-  });
-  
-  var infowindow = new google.maps.InfoWindow();
-  
-  var service = new google.maps.places.PlacesService(map);
+var map;
+var infowindow;
+var markers = [];
+
+function getLocation(){
   
   if(!navigator.geolocation){ 
     //情報ウィンドウの位置をマップの中心位置に指定
@@ -18,34 +12,40 @@ function initMap() {
     //情報ウィンドウを表示
     infowindow.open(map);
   }
-  
-  //ブラウザが対応している場合、position にユーザーの位置情報が入る
-  navigator.geolocation.getCurrentPosition(function(position) { 
-    //position から緯度経度（ユーザーの位置）のオブジェクトを作成し変数に代入
-    var pos = {  
-      lat: position.coords.latitude,
-      lng: position.coords.longitude
-    };
-    //情報ウィンドウに現在位置を指定
-    infowindow.setPosition(pos);
-    //マップの中心位置を指定
-    map.setCenter(pos);
-    
-    //種類（タイプ）やキーワードをもとに施設を検索（プレイス検索）するメソッド nearbySearch()
-    service.nearbySearch({
-      location: pos,  //検索するロケーション
-      radius: 750,  //検索する半径（メートル）
-      name: ['カフェ']  //タイプで検索。文字列またはその配列で指定
-    }, callback);  //コールバック関数（callback）は別途定義
- 
+    // 位置情報を取得する
+  navigator.geolocation.getCurrentPosition(function(position) {
+            // 現在地
+            var pos = {lat: position.coords.latitude, lng: position.coords.longitude};
+            infowindow = new google.maps.InfoWindow(pos);
+            // 現在地の緯度経度を中心にマップを生成
+            map = new google.maps.Map(document.getElementById('map'), {
+                center: pos,
+                zoom: 16
+            });
+            // 地図ドラッグ時のイベント
+            map.addListener( "dragend", function () {
+                clearMarkerAll(map);
+                var response = map.getCenter() ;
+                service.nearbySearch({
+                  location: response,
+                  radius: 750,
+                  name: ['cafe']
+                }, callback);
+            });
+        
+            var service = new google.maps.places.PlacesService(map);
+            service.nearbySearch({
+              location: pos,
+              radius: 750, 
+              type: ['cafe']
+            }, callback);
+
     //コールバック関数には results, status が渡されるので、status により条件分岐
     function callback(results, status) {
-      // status は以下のような定数で判定（OK の場合は results が配列で返ってきます）
-      if (status === google.maps.places.PlacesServiceStatus.OK) {
-        //results の数だけ for 文で繰り返し処理
-        for (var i = 0; i < results.length; i++) {
-          //createMarker() はマーカーを生成する関数（別途定義）
-          createMarker(results[i]);
+    if (status === google.maps.places.PlacesServiceStatus.OK) {
+      for (var i = 0; i < results.length; i++) {
+         //createMarker() はマーカーを生成する関数（別途定義）
+        createMarker(results[i]);
         }
       }
     }
@@ -56,21 +56,24 @@ function initMap() {
     infowindow.setContent('Error: Geolocation が無効です。');
     //情報ウィンドウを表示
     infowindow.open(map);
-  });   
-  
-  //マーカーを生成する関数（引数には検索結果の配列 results[i] が入ってきます）
-  function createMarker(place) {
-    //var placeLoc = place.geometry.location; 
+  });  
+}
+//地図上にマーカーを生成
+function createMarker(place) {
     var marker = new google.maps.Marker({
-      map: map,
-      position: place.geometry.location  //results[i].geometry.location
+        map: map,
+        position: place.geometry.location
     });
-   
-    //マーカーにイベントリスナを設定
-    marker.addListener('click', function() {
-      infowindow.setContent(place.name);  //results[i].name
-      infowindow.open(map, this);
+    markers.push(marker);//重要　引数を関数の外にで使えるようにする。
+    //地図上のマーカーをクリックした際の動作、吹き出しの中身
+    google.maps.event.addListener(marker, 'click', function() {
+        infowindow.setContent(place.name); 
+        infowindow.open(map, this);
     });
-  }
-   
+}
+//マーカーを消す
+function clearMarkerAll(map) {
+    for (var i = 0; i < markers.length; i++) {
+      markers[i].setMap(null);
+    }
 }
