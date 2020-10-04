@@ -3,7 +3,7 @@ function initMap() {
   var tokyo = {lat: 35.681167, lng: 139.767052};  //東京駅の緯度経度
   var map = new google.maps.Map(document.getElementById('map'), {
     center: tokyo,
-    zoom: 15
+    zoom: 16
   });
   
   var infowindow = new google.maps.InfoWindow();
@@ -65,11 +65,12 @@ function initMap() {
       map: map,
       position: place.geometry.location  //results[i].geometry.location
     });
- 
+   
     //マーカーにイベントリスナを設定
     marker.addListener('click', function() {
       infowindow.setContent(place.name);  //results[i].name
       infowindow.open(map, this);
     });
   }
+   
 }
