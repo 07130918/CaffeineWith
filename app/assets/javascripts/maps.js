@@ -3,15 +3,6 @@ var infowindow;
 var markers = [];
 
 function getLocation(){
-  
-  if(!navigator.geolocation){ 
-    //情報ウィンドウの位置をマップの中心位置に指定
-    infowindow.setPosition(map.getCenter());
-    //情報ウィンドウのコンテンツを設定
-    infowindow.setContent('Geolocation に対応していません。');
-    //情報ウィンドウを表示
-    infowindow.open(map);
-  }
     // 位置情報を取得する
   navigator.geolocation.getCurrentPosition(function(position) {
             // 現在地
@@ -31,33 +22,31 @@ function getLocation(){
                   radius: 750,
                   name: ['cafe']
                 }, callback);
+            
+            },function(error) {
+            // 失敗時の処理
+            alert('エラー：' + error);
             });
         
             var service = new google.maps.places.PlacesService(map);
             service.nearbySearch({
               location: pos,
               radius: 750, 
-              type: ['cafe']
+              name: ['cafe']
             }, callback);
 
     //コールバック関数には results, status が渡されるので、status により条件分岐
     function callback(results, status) {
     if (status === google.maps.places.PlacesServiceStatus.OK) {
       for (var i = 0; i < results.length; i++) {
-         //createMarker() はマーカーを生成する関数（別途定義）
+        //createMarker() はマーカーを生成する関数（別途定義）
         createMarker(results[i]);
         }
       }
     }
-  }, function() {  //位置情報の取得をユーザーがブロックした場合のコールバック
-    //情報ウィンドウの位置をマップの中心位置に指定
-    infowindow.setPosition(map.getCenter());
-    //情報ウィンドウのコンテンツを設定
-    infowindow.setContent('Error: Geolocation が無効です。');
-    //情報ウィンドウを表示
-    infowindow.open(map);
   });  
 }
+
 //地図上にマーカーを生成
 function createMarker(place) {
     var marker = new google.maps.Marker({
@@ -75,5 +64,12 @@ function createMarker(place) {
 function clearMarkerAll(map) {
     for (var i = 0; i < markers.length; i++) {
       markers[i].setMap(null);
+    }
+}
+function callback(results, status) {
+    if (status === google.maps.places.PlacesServiceStatus.OK) {
+      for (var i = 0; i < results.length; i++) {
+        createMarker(results[i]);
+      }
     }
 }
