@@ -2,7 +2,7 @@ var map;
 var infowindow;
 var markers = [];
 
-function initMap(){
+function getLocation(){
   
   if(!navigator.geolocation){ 
     //情報ウィンドウの位置をマップの中心位置に指定

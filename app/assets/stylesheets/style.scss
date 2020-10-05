@@ -100,6 +100,12 @@ body {
         6px 0px 15px rgba(255, 255, 240, 1);
       }
     }
+    
+    .innerlink.maplink{
+      &:hover{
+        text-shadow: none;
+        }
+      }
   
     input[type=checkbox] {
         transition: all 0.3s;
