@@ -17,7 +17,7 @@ function initMap(){
             // 現在位置にピンをたてる
             var currentMarker = new google.maps.Marker({
               position: pos,
-              map,
+              map: map,
               icon: '/assets/positionicon.png',
             });
 
