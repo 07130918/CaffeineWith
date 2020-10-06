@@ -13,6 +13,15 @@ function initMap(){
                 center: pos,
                 zoom: 16
             });
+
+            // 現在位置にピンをたてる
+            const image = "/assets/positionicon.png";
+            var currentMarker = new google.maps.Marker({
+              position: pos,
+              icon: image
+            });
+            currentMarker.setMap(map);
+
             // 地図ドラッグ時のイベント
             map.addListener( "dragend", function () {
                 clearMarkerAll(map);
@@ -64,12 +73,5 @@ function createMarker(place) {
 function clearMarkerAll(map) {
     for (var i = 0; i < markers.length; i++) {
       markers[i].setMap(null);
-    }
-}
-function callback(results, status) {
-    if (status === google.maps.places.PlacesServiceStatus.OK) {
-      for (var i = 0; i < results.length; i++) {
-        createMarker(results[i]);
-      }
     }
 }
