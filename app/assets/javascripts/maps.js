@@ -15,13 +15,12 @@ function initMap(){
             });
 
             // 現在位置にピンをたてる
-            // const image = "/assets/positionicon.png";
-            const image = "https://developers.google.com/maps/documentation/javascript/examples/full/images/beachflag.png";
+            const image = "/assets/positionicon.png";
             var currentMarker = new google.maps.Marker({
               position: pos,
-              icon: image
+              map,
+              icon: image,
             });
-            currentMarker.setMap(map);
 
             // 地図ドラッグ時のイベント
             map.addListener( "dragend", function () {
