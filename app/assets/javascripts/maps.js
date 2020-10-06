@@ -13,13 +13,12 @@ function initMap(){
                 center: pos,
                 zoom: 16
             });
-
+            
             // 現在位置にピンをたてる
-            const image = "/assets/positionicon.png";
             var currentMarker = new google.maps.Marker({
               position: pos,
               map,
-              icon: image,
+              icon: '/assets/positionicon.png',
             });
 
             // 地図ドラッグ時のイベント
