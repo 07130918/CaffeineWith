@@ -15,7 +15,8 @@ function initMap(){
             });
 
             // 現在位置にピンをたてる
-            const image = "/assets/positionicon.png";
+            // const image = "/assets/positionicon.png";
+            const image = "https://developers.google.com/maps/documentation/javascript/examples/full/images/beachflag.png";
             var currentMarker = new google.maps.Marker({
               position: pos,
               icon: image
