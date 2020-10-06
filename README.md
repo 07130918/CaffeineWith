@@ -1,7 +1,8 @@
 # [コーヒーを飲むことにより今日摂取したカフェインの量を記録してくれるアプリCaffeineWith](https://caffeinewith.herokuapp.com/)
 
 見ていただきありがとうございます。佐藤宏太です。よろしくお願いいたします。  
-企業様はトップページのドロワーメニューの1番下にゲストログインがありますのでそちらからお願いします。  
+企業様はトップページのドロワーメニューの下から2つ目にゲストログインがありますのでそちらからお願いします。  
+位置情報の許可をお願いします。  
 またタブを閉じる際にはログアウトをお忘れないよう、お願いします。
 
 * Ruby 2.5.1 フレームワーク Rails 5.2.4.4
@@ -11,6 +12,8 @@
 * Database mysql
 
 * デプロイ heroku
+
+* API Geolocation API, Maps JavaScript API, Places API
   
 #アプリの機能一覧
 
@@ -28,6 +31,8 @@
 
 * ページネーション機能(gem kaminari)
 
+* 現在地をもとに半径750m以内にあるカフェをマップに表示する機能(api)
+
 佐藤宏太
 Email <kotawonderlandjapan@outlook.jp>
 
@@ -35,7 +40,8 @@ Email <kotawonderlandjapan@outlook.jp>
 [CaffeineWith, an app that records the amount of caffeine you consume today by drinking coffee](https://caffeinewith.herokuapp.com/)
 
 Thank you for watching. This is Kota Sato.  
-For companies, there is a guest login at the bottom of the drawer menu on the top page, so please use that.  
+Companies have a guest login at the second bottom of the drawer menu on the top page, so please use that.   
+Please allow location information.  
 Also, please do not forget to log out when closing the tab.
 
 * Ruby 2.5.1 Framework Rails 5.2.4.4
@@ -45,6 +51,8 @@ Also, please do not forget to log out when closing the tab.
 * Database mysql
 
 * Deploy heroku
+
+* API Geolocation API, Maps JavaScript API, Places API
 
 #App function list
 
@@ -61,6 +69,8 @@ Also, please do not forget to log out when closing the tab.
 * Login function, simple login function for companies (gem devise)
 
 * Pagination function (gem kaminari)
+
+* Function to display cafes within a radius of 750m on a map based on your current location (api)
 
 Kota Sato
 Email <kotawonderlandjapan@outlook.jp>
