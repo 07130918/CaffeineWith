@@ -101,12 +101,6 @@ body {
       }
     }
     
-    .innerlink.maplink{
-      &:hover{
-        text-shadow: none;
-        }
-      }
-  
     input[type=checkbox] {
         transition: all 0.3s;
         display: none;
