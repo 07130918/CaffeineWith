@@ -2,7 +2,7 @@ var map;
 var infowindow;
 var markers = [];
 
-function getLocation(){
+function initMap(){
     // 位置情報を取得する
   navigator.geolocation.getCurrentPosition(function(position) {
             // 現在地
