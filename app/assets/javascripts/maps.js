@@ -1,4 +1,4 @@
-let map;
+var map;
 let infowindow;
 let markers = [];
 function initMap(){
