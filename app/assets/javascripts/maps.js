@@ -1,6 +1,6 @@
 var map;
-let infowindow;
-let markers = [];
+var infowindow;
+var markers = [];
 function initMap(){
     // 位置情報を取得する
   navigator.geolocation.getCurrentPosition(function(position) {
