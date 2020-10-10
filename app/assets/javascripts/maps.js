@@ -1,7 +1,6 @@
-var map;
-var infowindow;
-var markers = [];
-
+let map;
+let infowindow;
+let markers = [];
 function initMap(){
     // 位置情報を取得する
   navigator.geolocation.getCurrentPosition(function(position) {
@@ -14,6 +13,7 @@ function initMap(){
                 zoom: 16
             });
             
+            
             // 現在位置にピンをたてる
             var currentMarker = new google.maps.Marker({
               position: pos,
@@ -24,13 +24,12 @@ function initMap(){
             // 地図ドラッグ時のイベント
             map.addListener( "dragend", function () {
                 clearMarkerAll(map);
-                var response = map.getCenter() ;
+                var response = map.getCenter();
                 service.nearbySearch({
                   location: response,
                   radius: 750,
                   name: ['cafe']
                 }, callback);
-            
             },function(error) {
             // 失敗時の処理
             alert('エラー：' + error);

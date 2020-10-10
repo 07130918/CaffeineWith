@@ -2,3 +2,14 @@
     <h3 class="caffes-map">Caffes map<span>(現在地から半径750m以内にあるカフェを表示しています/Showing cafes within a radius of 750m from your current location)</span></h3>
     <div id='map'></div>
 </div>
+
+<script>
+      if(window.google) {
+        initMap();
+      } else {
+        $.ajax("https://maps.googleapis.com/maps/api/js?key=<%= ENV['API_KEY'] %>&language=ja&libraries=places&callback=initMap", {
+        crossDomain: true,
+        dataType: 'script'
+        });
+      }
+</script>
