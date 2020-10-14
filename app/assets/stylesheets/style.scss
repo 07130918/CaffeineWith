@@ -9,7 +9,7 @@ body {
 // このアプリのすべてのスクロールバー設定
 ::-webkit-scrollbar {
   width: 0.1vw;
-  height: 0.3vh;
+  height: 0.8vh;
 }
 
 ::-webkit-scrollbar-track {
@@ -277,6 +277,7 @@ footer {
         justify-content: center;
         min-height: 30%;
         font-size: 120%;
+        text-align: center;
         }
         
       h3 {
@@ -410,7 +411,7 @@ footer {
       }  
       .scroll-contents {
         display: flex;
-        width: 90%;
+        // width: 90%;
       }
             
       .sbtn.starbucks, .sbtn.tullys {
