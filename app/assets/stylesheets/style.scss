@@ -407,7 +407,16 @@ footer {
       .size.wid {  //サイズ選択肢が4つある場合
         width: 100%;
       }  
+      .scroll-contents {
+        display: flex;
+        width: 90%;
+      }
+            
+      .sbtn.starbucks, .sbtn.tullys {
+        width: 150%;
+      }
     }
+    
 }
 
 .starbucks {
@@ -456,6 +465,7 @@ footer {
   font-weight: bold;
   border: 2px solid #9acd32;
   }
+  
   
 // -------------------------------------------------------------------------
 // logs/all.html.erb(users/show.html.erb)
