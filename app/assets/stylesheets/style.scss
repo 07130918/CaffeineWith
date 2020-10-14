@@ -8,7 +8,7 @@ body {
 // ---------------------------------------------------------
 // このアプリのすべてのスクロールバー設定
 ::-webkit-scrollbar {
-  width: 0.4vw;
+  width: 0.1vw;
 }
 
 ::-webkit-scrollbar-track {
@@ -783,8 +783,8 @@ footer {
     }
     
   ::-webkit-scrollbar {
-  width: 0.4vw;
-  height: 0.5vh;
+  width: 0.1vw;
+  height: 0.1vh;
   }
 
   ::-webkit-scrollbar-track {
