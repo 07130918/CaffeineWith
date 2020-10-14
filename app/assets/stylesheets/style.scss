@@ -2,8 +2,8 @@
 body {
   background-image: url('coffee-shop-393954_1920.jpg');
   background-size: cover;
-  height: 100vh;
-  overflow-y: hidden;
+  // height: 100vh;
+  overflow-y: scroll;
   }
 // ---------------------------------------------------------
 // このアプリのすべてのスクロールバー設定
@@ -264,7 +264,7 @@ footer {
     .item {
       background-color: white;
       width: 30%;
-      height: 10rem;
+      height: 20vh;
       
       &:hover {
         cursor: default;
@@ -463,7 +463,7 @@ footer {
   width: 80vw;
   background: rgba(0,0,0, 0.7); 
   margin: 2vh auto;
-  height: 84vh;
+  // height: 84vh;
   padding: 2vh 0;
   }
 
@@ -590,7 +590,7 @@ footer {
 // logs/new.html.erb
 .cover {
   max-height: 80vh;
-  margin: 20vh auto;
+  margin: 20vh auto 0;
   }
 
 .sheet {
@@ -884,7 +884,7 @@ footer {
     }
   
   .whitecover{
-    max-height: 90%;
+    // max-height: 90%;
     overflow: hidden;
     width: 100vw;
     }
@@ -917,9 +917,9 @@ footer {
     margin-bottom: 10px;
     }
   
-  .oneview {
-    height: 36vh;
-    }  
+  // .oneview {
+    // height: 36vh;
+    // }  
   
   // edit.html.erb------------------
     .editpage {
