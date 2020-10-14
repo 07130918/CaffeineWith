@@ -9,6 +9,7 @@ body {
 // このアプリのすべてのスクロールバー設定
 ::-webkit-scrollbar {
   width: 0.1vw;
+  height: 0.3vh;
 }
 
 ::-webkit-scrollbar-track {
@@ -19,7 +20,7 @@ body {
 
 ::-webkit-scrollbar-thumb {
   background: #CCC;
-  border-radius: 1rem;
+  // border-radius: 1rem;
   box-shadow: none;
 }
 // ----------------------------------------------------------------
