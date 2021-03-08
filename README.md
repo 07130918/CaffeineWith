@@ -11,8 +11,6 @@
 
 * Ruby 2.5.1 フレームワーク Rails 5.2.4.4
 
-* 開発環境 AWS EC2
-
 * Database mysql
 
 * デプロイ heroku
@@ -70,8 +68,6 @@ Please allow location information.
 Also, please do not forget to log out when closing the tab.
 
 * Ruby 2.5.1 Framework Rails 5.2.4.4
-
-* Development environment AWS EC2
 
 * Database mysql
 
